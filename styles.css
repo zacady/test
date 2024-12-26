@@ -40,7 +40,7 @@
 }
 
 .infobox figcaption {
-    display: none;
+    display: none !important;
 }
 
 .working {
