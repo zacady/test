@@ -179,7 +179,8 @@ Now that we have established an intuitive understanding of what a model is, we a
 
 :::: {.content-visible when-format="html"}
 ::: {#fig-Box1.1h .infobox style="--c:'Box 1.1 – Key idea';"}
-**The fundamental principle of data analysis** <br> $$
+**The fundamental principle of data analysis** <br> 
+$$
 Data = Model + Error
 $$
 :::
