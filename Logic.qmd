@@ -1,0 +1,233 @@
+---
+bibliography: references.bib
+---
+
+# Elements of logic
+
+As researchers, we would like to contribute in generating new knowledge about reality. As social scientists, in particular, we might put forth explanations of why humans feel, think, and behave in certain ways in certain situations. 
+
+
+
+As researchers, we would like to make statements about the world that are true. But distinguishing true statements from false ones is far from self-evident. Hence, we should think of a statement as true only if we have *reasons* to do so. In logic, such reasons are called [arguments]{.mybold}.
+
+Not all arguments are of the same nature. Consider the following examples:
+
+Some notions of logic are useful
+
+## Arguments
+
+Arguments are made up of basic statements called [propositions]{.mybold}.
+
+::: definition
+[Propositions]{.mybold} *are basic statements that are either true or false.*
+:::
+
+Two types of propositions form an argument: the [premises]{.mybold} and the [conclusion]{.mybold}.
+
+::: definition
+The [premises]{.mybold} *are the reasons invoked to justify the conclusion.*
+
+The [conclusion]{.mybold} *is the proposition inferred based on the premises.*
+:::
+
+The [premises]{.mybold} are propositions forming the basis on which the argument rests. The conclusion is the proposition
+
+> **(P1)**: *This orange is good.*
+>
+> **Therefore**: *All oranges in the box are good.*
+
+## Deductive logic
+
+Deductive logic is concerned with identifying the form of arguments whereby the conclusion can be safely derived from the premises.
+
+### Validity
+
+Consider Argument (1), for instance:
+
+> Argument (1)
+>
+> **Premise 1**: The cat is either dead or alive.
+>
+> **Premise 2**: The cat is not dead.
+>
+> **Conclusion**: The cat is alive.
+
+If Premise 1 and 2 are true, there is absolutely no way that the conclusion is not true. Logicians have a specific term to refer to this property: they say that such an argument is [valid]{.mybold}.
+
+::: definition
+A deductive argument is [valid]{.mybold} if and only if the truth of all the premises *necessarily* implies the truth of the conclusion. Otherwise, it is [invalid]{.mybold}.
+:::
+
+Ian Hacking [-@hacking2001] usefully calls valid arguments "risk-free arguments".
+
+Some arguments may appear intuitively compelling to us, while they are not, in fact, valid. We say that they [invalid]{.mybold}. Consider the following:
+
+> Argument (2)
+>
+> **Premise 1**: If Trillian is hungry, then she starts eating.
+>
+> **Premise 2**: Trillian starts eating.
+>
+> **Conclusion**: Trillian is hungry.
+
+Even if the conclusion could happen to be true, it does not necessarily follow from the premises. Premise 1 does not rule out that Trillian could start eating even if not hungry. Thus, the fact that Trillian starts eating (Premise 2) does not necessarily imply that she is hungry. Trillian might simply be bored or trying to please a host who invited her for dinner, for instance. 
+
+Argument (2) commits a fallacy, i.e., an error in reasoning. This particular fallacy is called "affirming the consequent". 
+
+### Soundness
+
+We have seen that a valid argument ensures that the conclusion is true if the premises are all true. But note that there is an important "if" there: **if all the premises are true**. In other words, an argument can be valid while its premises are false.
+
+
+
+```{r}
+#| label: tbl-arg
+#| tbl-cap: Determining the soundness of deductive arguments
+
+
+library(tidyverse)
+library(flextable)
+
+tibble(
+  "  " = c("Premises", "Premises"),
+  " " = c("All true", "Not all true"),
+  Valid = c("Sound", "Unsound"),
+  Invalid = c("Unsound", "Unsound")
+) %>%
+  flextable::flextable() %>%
+  flextable::merge_v(j = 1) %>%
+  flextable::add_header_row(values = c("", "", "Reasoning"), colwidths = c(1, 1, 2)) %>%
+  flextable::align(align = "center", part = "all") %>%
+  flextable::border_remove() %>%
+  flextable::border(j=3:4, border = officer::fp_border(color = "black"), part = "body") %>%
+  flextable::bold(j = 1, part = "body") %>%
+  flextable::bold(part = "header", i = 1) %>%
+  autofit(add_w = 0.5, add_h = .7) %>% 
+  width(j = 1:2, width = .9, unit = "in") %>% 
+  height(height = 100, unit = "in") %>%
+  line_spacing(space = 2.7, part = "body")
+
+```
+
+## Inductive logic
+
+
+
+## Elements of set theory
+
+Arguments using quantifiers like "all", "some", or "none" can usefully be represented through relations between sets.
+
+::: {layout="[60,40]" layout-valign="center" fig-align="center"}
+> *Argument (3)*
+>
+> **Premise 1**: All scientists love statistics
+>
+> **Premise 2**: All social scientists are scientists
+>
+> **Conclusion**: All social scientists love statistics
+
+```{r}
+#| label: fig-set1
+#| fig-cap: "Set representation of Argument (3)"
+#| fig-dpi: 330
+#| fig-align: center
+#| out-width: "100%"
+
+library(tidyverse)
+library(ggforce)
+
+labs_dt <- tibble(
+  x = c(0, 0, 0),
+  y = c(4, 2.2, .5),
+  Lab = c("Statistics lovers", "Scientists", "Social\nscientists")
+)
+
+tmp <- tibble(
+  x = c(-1.5, 1.5),
+  y = c(-1,1)
+)
+
+tibble(
+  x0 = c(0, 0, 0),
+  y0 = c(2, 1, .5),
+  a = c(1.5, 1, .5),
+  b = c(3, 2, 1.2),
+  type = factor(1:3)
+) %>%
+  ggplot() +
+  geom_circle(aes(x0=x0, y0=y0, r = b, fill = type), alpha = 1, lwd = .8, show.legend = F) +
+  #geom_mark_rect(data = tmp, aes(x = x, y = y), fill = "grey80") +
+  geom_text(data = labs_dt, aes(x, y, label = Lab), size = 6, fontface = "bold") +
+  scale_fill_brewer(palette = "Pastel1", direction = -1) +
+  coord_fixed() +
+  #ylim(c(-1.5,1.5)) +
+  theme_void()
+
+```
+:::
+
+
+
+
+```{r}
+#| label: fig-set
+#| fig-cap: "An example of sets"
+#| fig-dpi: 330
+
+library(tidyverse)
+library(ggforce)
+
+labs_dt <- tibble(
+  x = c(-.5, .5, 0, 1.2),
+  y = c(0, 0, 0, .9),
+  Lab = c("A", "B", latex2exp::TeX("$\\A\\cap\\B$"), latex2exp::TeX("$\\Omega$"))
+)
+
+tmp <- tibble(
+  x = c(-1.5, 1.5),
+  y = c(-1,1)
+)
+
+tibble(
+  x0 = c(-.5, .5),
+  y0 = c(0, 0),
+  r = c(.75,.75),
+  type = factor(1:2)
+) %>%
+  ggplot() +
+  geom_circle(aes(x0=x0, y0=y0, r=r, fill = type), alpha = .3, lwd = .8, show.legend = F) +
+  geom_mark_rect(data = tmp, aes(x = x, y = y), fill = "grey80") +
+  geom_text(data = labs_dt, aes(x, y, label = Lab), parse = T, size = 4.5) +
+  scale_fill_brewer(palette = "Set1") +
+  ylim(c(-1.5,1.5)) +
+  coord_fixed() +
+  ggmap::theme_nothing()
+
+```
+
+
+
+
+```{r}
+
+library(gt)
+
+tibble(
+  Symbol = c(
+    "$$\\Omega$$",
+    "$$\\emptyset$$",
+    "$$\\cup$$",
+    "$$\\cap$$",
+    "$$\\setminus$$",
+    "$$\\tilde{}$$"
+  )
+) %>%
+  gt() %>%
+  fmt_markdown()
+
+
+
+```
+
+
+
