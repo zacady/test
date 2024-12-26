@@ -6,6 +6,21 @@
 
 /* Classes */
 
+.mybold {
+    color: rgb(16, 120, 149);
+    font-weight: 1000;
+}
+
+.definition {
+    padding-top: 20px;
+    padding-bottom: 10px;
+    padding-left: 60px;
+    padding-right: 60px;
+    margin-bottom: 20px !important;
+    margin-top: 20px !important;
+    background: rgb(240, 240, 240);
+}
+
 .infobox {
     margin-top: 50px;
     margin-bottom: 50px;
