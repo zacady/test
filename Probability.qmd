@@ -1,0 +1,49 @@
+---
+bibliography: references.bib
+---
+
+# Elements of probability theory
+
+## What is probability?
+
+### Two senses of the term "probability"
+
+Consider the two following statements
+
+> *Statement (1)*
+>
+> There is 0.95 probability that
+
+> *Statement (2)*
+>
+> There is 0.5 probability that flipping a fair coin will give me "heads"
+
+### The classical definition
+
+:::: {.content-visible when-format="html"}
+::: {#fig-Box2.1h .infobox style="--c:'Box 3.1';"}
+**Classical definition of probability** <br> $$
+P(A) = \frac{\#_A}{\#_{total}}
+$$ *The probability of A is the ratio between the number of favourable cases to the total number of cases.*
+:::
+::::
+
+### The frequentist definition
+
+Formulated by John Venn [-@venn1888]
+
+:::: {.content-visible when-format="html"}
+::: {#fig-Box2.2h .infobox style="--c:'Box 3.2';"}
+**Frequentist definition of probability** <br> $$
+P(A) = \lim_{n\to\infty} \frac{n_A}{n}
+$$ *The probability of A is the limit of the relative frequency of A as the number of trials goes to infinity.*
+:::
+::::
+
+### Kolmogorov's axioms
+
+## The calculus of probabilities
+
+### The complement
+
+### 

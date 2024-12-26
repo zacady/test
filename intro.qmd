@@ -1,0 +1,297 @@
+# Introduction
+
+Suppose you are a researcher interested in the underpinnings of human well-being. In simple terms, your question is: *How does human well-being work?* Trying to answer such a broad question might sound a bit overwhelming at first. Where do you even start? Well, a good place to start is to make a simple but fundamental observation: well-being is not identical for everyone at all times. Some people seem to fare better than others, and the same individuals will feel more or less content and happy at different points in their lives. To convey this fact we say that well-being is a [variable]{.mybold}. Looking at well-being as a variable is useful because it lets you reformulate your original question in a more precise and approachable way: why is it that some people are happier than others? Why do people feel better at some moments in their life and less so at others? To understand how well-being works, you would need to explain this variability.
+
+We can try to formulate possible explanations, or [hypotheses]{.mybold}. Well-being might be affected by one's physical health, income, and personality, for instance. It might also depend on the type of neighbourhood one lives in, the quality of one's relationship with family and friends, and exposure to violent experiences like war or natural disasters (notice how these hypotheses involve other variables).
+
+If you think about it long enough, you will eventually come to realize that the possible determinants of well-being are so numerous that listing them exhaustively seems like an impossible task. The example of well-being is not an exception in that regard. Phenomena investigated by social scientists are, as a rule, tremendously complex. They are the product of an amount of causes so vast that identifying all of them is virtually impossible. This inherent complexity is the most fundamental reason – but not the only one – why *our attempts to explain our phenomena of interest will inevitably result in a simplification of reality*. When conducting data analysis, such a simplification of reality is called a [Model]{.mybold}.
+
+Variables, hypotheses, and models all play a fundamental role in the practice of data analysis. They are tools that help us take our theories about how the world works and confront them with reality. In the remaining of this chapter, we will build a more precise understanding of these notions and how to use them in practice.
+
+## Variables
+
+We have seen that well-being can usefully be considered as a [variable]{.mybold} to convey that it is not identical for everyone and at all times. The same is true for things like personality, gender, income, or the type of neighbourhood one lives in. You might notice that, by calling all these information "variables", we are lumping quite different things together: income, for instance, is a quantity - it can meaningfully be represented by a number - while gender is not. Distinctions of this sort are important, and we will discuss them in due course. For now, suffice it to say that
+
+::: definition
+*A* [variable]{.mybold} *is a quantity or a quality that varies.*
+:::
+
+### Theoretical and operational variables {#sec-var-sub1}
+
+But what do we mean exactly when we use the word "well-being"? Is it the same as happiness? Or satisfaction with one's life? One of your tasks as a researcher will be to define your phenomenon of interest as clearly possible. We call such clearly defined concept a [theoretical variable]{.mybold} (or a theoretical construct).
+
+For instance, having thoroughly reviewed the existing knowledge on the topic, you might conclude that the notion of well-being can be defined as a special case of the sentiment of satisfaction. This sentiment of satisfaction, you add, is not related to any particular aspect of the person's life, but rather about all aspects considered together. Hence, you decide to define well-being as *an individual's degree of satisfaction with their life considered in all its aspects*. This would be your theoretical variable.
+
+Note that defining a theoretical variable (well-being, in this case) has less do to with laying out what well-being 'truly is' than with being clear about what *you mean* when using the term.[^intro-1] After all, definitions of terms are conventional: a term can be said to have a "true meaning" only in the sense of a meaning that is agreed upon by some set of people. What matters the most when defining your theoretical variable is to be clear – *i.e.*, to leave as little ambiguity as possible regarding what it does and does not refer to in the real world. But this does not mean that you can just ignore how you theoretical variable is usually defined by other scientists, or even among the general public. Conventions in terminology facilitate smooth communication, and departing from them can result in misunderstandings. Claiming to study "well-being" while actually defining that term as an individual's preference for cats over dogs would be unreasonably confusing, no matter how clear the definition. In sum, you should depart from conventional definitions only if you have good reasons to do so, such as when it helps distinguishing better from closely related terms.
+
+[^intro-1]: The philosopher of science Karl Popper [@popper2020] has criticized the view – which he associates with Aristotle – that concepts have a true essence that our definition should reflect. Rather, Popper argues, scientific concepts are just labels that we put on real-world processes. Thus, it does not really matter which label we use to refer to a given process, as long as we clearly define what our label refers to and use our terminology consistently. Popper refers to his view as "methodological nominalism" as opposed to Aristotle's "methodological essentialism".
+
+::: definition
+*A* [theoretical variable]{.mybold} *is the concept of interest defined in abstract and general terms.*
+:::
+
+Having clearly defined your theoretical variable is not enough, however, because such a variable cannot be directly observed the real world. Think about well-being: however clearly you define it, you cannot simply observe a person and self-evidently know their well-being. You will need to find a concrete procedure to extract the information corresponding to your theoretical concept in the real world. Such procedure is what we call **measurement**. And the information obtained through measurement is the [operational variable]{.mybold}.
+
+Since in our example we defined our theoretical variable in subjective terms – through the feeling of satisfaction – you could reason that the best way to extract the corresponding information would be to directly ask people. You might thus devise a questionnaire including a question similar to the following: *thinking of your life as whole, how satisfied would you say you are on a scale ranging from 1 (not satisfied at all) to 10 (completely satisfied)?*
+
+Ideally, you should select a measurement procedure with the aim that the resulting operational variable should faithfully and reliably reflect the theoretical variable. Consider the measure of well-being proposed in the previous paragraph, for instance. If an individual happen to be in a bad mood while answering the question, the negative aspects of her life might come to her attention more readily than the positive ones, leading her to rate her own well-being lower than she would have earlier or later that day. If the aim is to capture satisfaction with one's life as a whole, this measurement wouldn't be very reliable because its outcome would change with every mood swing. A strategy to limit this problem would be to present participants with a series of questions, each focusing on a specific aspect of their life (e.g., finances, physical health, friendships, etc.) and aggregate all answers into a composite score. This way, participants would be prompted to pay attention to the different facets of their life instead of being guided by what their transient state of mind brings to their attention.
+
+::: definition
+*An* [operational variable]{.mybold} *is the information, obtained through a concrete measurement procedure, used to represent real-world realizations of the theoretical variable.*
+:::
+
+This example illustrates that devising a measurement procedure that yields a sound operational variable can be a tricky endeavour. Researchers have developed a set of tools that can help us in this task. We will discuss some of these tools later. Examples of work defining well-being as a theoretical variable and proposing a way to measure it can be found in Diener *et al* [-@diener2010] and Weziak-Bialowolska *et al* [-@weziak-bialowolska2021].
+
+## Hypotheses
+
+Remember what thinking in terms of variables taught us: to explain well-being, you would need to find explanations that account for its variability in the real world. And we have seen that we could think of many possible explanations. Let us consider one of them, as an example: *well-being is affected by income*. We will call this statement a [hypothesis]{.mybold}.
+
+A first thing to note about this statement is that it indicates that well-being is explained by another variable: income. Just like well-being, income is not the same for everyone, and can vary from time to time for a given individual. Hence, income is also a variable. And our hypothesis states that this variable explains well-being.
+
+Second, one thing that makes the sentence *well-being is affected by income* a valid hypothesis is that it is a **statement**. On the contrary, the sentence *is well-being affected by income?* is a question rather than a statement and, hence, doesn't qualify as a hypothesis.
+
+A third notable feature is that we are stating something that we don't actually know. Maybe income does affect well-being, maybe it doesn't. We might have a strong belief about it, but it is crucial to always consider that our belief might turn out to be false. Indeed, the very purpose of a hypothesis is to formulate a factual statement that can be confronted with observations in the real world. Therefore, a statement qualifies as a hypothesis only if it is in principle possible to prove it wrong by observation. That is, we should be able to think of a situation in which what we observe will show us that the hypothesis is false, if it is indeed false. We say that a hypothesis must be **falsifiable**.
+
+To make this last point clearer, consider the statement *well-being is undermined by memories of childhood trauma even if they have been suppressed*. Try to think of an observation that would prove this statement wrong. For instance, you could ask a large number of individuals to recall any childhood trauma and then compare the well-being of those who recall traumatic experiences to the well-being of those who don't. But even if well-being turns to be exactly the same in both groups, the statement implies that those who don't recall any trauma could have in fact suppressed such memories. Whatever observation we make, it seems that we can always "save" the statement from being proven wrong by invoking the notion that memories can be suppressed and, hence, can remain undetected. This statement thus appears unfalsifiable. It is **not** a valid hypothesis.
+
+::: definition
+A [hypothesis]{.mybold} is a statement about the relationship between variables which is in principle falsifiable through observation.
+:::
+
+### Dependent and independent variables
+
+When we hypothesize that two variables are related, we usually specify the relationship a bit further. If I say *Well-being is affected by income*, well-being and income are both variables, but one (well-being) is the thing we are trying to explain whereas the other (income) is the proposed explanation. We call them [dependent variable]{.mybold} and [independent variable]{.mybold}, respectively (see @fig-var).
+
+::: definition
+In a hypothesis, the [dependent variable]{.mybold} is the variable that we are trying to explain whereas the [independent variable]{.mybold} is the variable that we hypothesize to explain the dependent variable.
+:::
+
+```{dot}
+//| label: fig-var
+//| fig-cap: Typical structure of a hypothesis
+//| fig-align: center
+//| fig-width: 6
+//| fig-height: 3
+//| fig-dpi: 330
+
+digraph G {
+
+  nodesep=1;
+  rankdir=LR;
+  IV [label = "Independent\nvariable" fontsize="5" width=0.5 height=.4];
+  DV [label = "Dependent\nvariable" fontsize="5" width=0.5 height=.4];
+  
+
+  IV -> DV [arrowsize=0.5]
+  
+}
+
+
+```
+
+Note that this not the only terminology used by scientists. A dependent variable is also called an **outcome** or a **response variable**. And an independent variable is also referred to as a **predictor** or an **explanatory variable**.
+
+One reason often invoked for preferring alternative terms is that the terminology of dependent and independent variable is usually understood as implying a causal relationship. And causality is a very difficult thing to test.
+
+### Theoretical and operational hypotheses
+
+Recall our distinction that we made [@sec-var-sub1] between theoretical and operational variables. Since hypotheses talk about variables, it is natural that we should make a similar distinction here.
+
+::: definition
+*A* [theoretical hypothesis]{.mybold} *is a general statement about the relationship between theoretical variables.*
+
+*An* [operational hypothesis]{.mybold} *is a statement about the relationship between operational variables in a clearly specified study setting.*
+:::
+
+## Modelling
+
+As social scientists, we should always remember that the phenomena we wish to explain are extremely complex. This means that we should abandon the illusion that we could explain them perfectly. Rather, we will rely on simplified descriptions of reality which capture relevant and useful aspects of it instead of grasping it in all complexity. We call such a simplification of reality a [model]{.mybold}.
+
+### Why do we need models?
+
+To understand why, let us consider once again hypotheses that could explain why well-being is not identical for everyone and at all times. It might be because well-being changes depending on variables like income, personality, physical and mental health, gender, life events, relationships, diet, sleep quality, and so on. The important thing to realize is that this list could go on. And on. Identifying all the variables that could potentially explain well-being is so difficult that we might as well consider it impossible in practice.
+
+But even if we could know all the variables that affect well-being (which we can't), grasping **how** exactly these variables influence well-being is way beyond what our minds can handle. Take the hypothesis that income fosters well-being: what amount of money exactly makes a difference? And does more income always lead to more well-being or is there an amount beyond which earning more doesn't make any difference? Are there personalities or cultures for which income matters more for well-being? Such questions also could go on.
+
+And finally, even if we knew all the relevant variables and understood how exactly they shape well-being (which, again, we can't), it would be impossible to measure them all and to do so with perfect accuracy. Measuring things takes time and resources, and measuring all the variables that might be relevant would require a gigantic amount of both. Moreover, some variables are very difficult to measure accurately. Think of any variable that is inherently subjective: well-being, personality, beliefs, emotions, and so on.
+
+:::: {.border style="border-color: #107895 !important; border-width: 2.5px !important; padding: 1em 2em 1em 1em; margin-top: 50px; margin-bottom: 50px; background: #80808021;"}
+::: {style="text-align: center;"}
+[**Three reasons for humility**]{.underline}
+:::
+
+-   It is virtually impossible to **identify** all the variables that explain a given phenomenon.
+
+-   It is virtually impossible to **grasp how these variables influence our phenomenon** of interest.
+
+-   It is virtually impossible to **measure** all the variables that explain a given phenomenon and to do so **with perfect accuracy**.
+::::
+
+### What is a model? {#sec-mod-sub2}
+
+Thus, our attempts at explaining a phenomenon will necessarily result in a simplification of reality. This might sound disappointing. But simplifying reality can actually be a very useful thing to do.
+
+Consider for instance a simple map of the world, like the one shown in @fig-models. In a sense, we can say that such a map describes the surface of our planet. Of course, it does so in a very incomplete and inaccurate way: lots of complicated stuff are constantly happening on earth which are not depicted on this map, like weather-related processes happening in the atmosphere, the organisation and movement of tectonic plates, water streams circulating in the oceans or the billions of living creatures populating the surface. But it is precisely because such a map is an incomplete description that it is useful to us. By extracting a few features from a highly complex reality, it makes it manageable for our minds to grasp relevant information which, otherwise, would be drown in an ocean of complexity. Thanks to the simplicity of the map, we can clearly identify the parts of the earth's surface that are not covered by water, how this landmass was partitioned into countries by humans, and their geographic positions relative to the poles and the equator. The map is thus a **simplification** of the reality it aims to describe – *i.e.*, the earth's surface. But it is an informative simplification. We can say that the map is a [model]{.mybold} of the earth's surface.
+
+::: definition
+A [model]{.mybold} is a simplified representation, which aims at describing relevant aspects of reality while ignoring others.
+:::
+
+::: {#fig-models layout="[ 45, 55 ]" layout-valign="center"}
+![](images/Earth.jpg)
+
+```{r}
+#| fig-dpi: 330
+
+library(tidyverse)
+library(sf)
+
+
+world_dt <- rnaturalearth::ne_countries(scale = "medium", returnclass = "sf")
+
+ocean <- st_polygon(list(cbind(c(seq(-180, 179, len = 100), rep(180, 100), 
+                                 seq(179, -180, len = 100), rep(-180, 100)),
+                               c(rep(-90, 100), seq(-89, 89, len = 100),
+                                 rep(90, 100), seq(89, -90, len = 100))))) |>
+  st_sfc(crs = "WGS84") |>
+  st_as_sf()
+
+ggplot(data = world_dt) +
+  geom_sf(data = ocean, fill = "aliceblue", alpha = .5) +
+  geom_sf(fill = "antiquewhite1", color = "grey50", alpha = 1) +
+  coord_sf(crs = "+proj=robin +lon_0=0 +x_0=0 +y_0=0 +ellps=WGS84 
+           +datum=WGS84 +units=m +no_defs", expand = F) +
+  theme_bw() +
+  theme(panel.grid.major = element_line(color = 'grey75', 
+                                        linetype = "dashed",
+                                        linewidth = .25),
+        panel.border = element_blank(),
+        panel.background = element_rect(fill = 'white'))
+
+```
+
+Example of model (the world map) of a complex reality (the earth's surface)
+:::
+
+### Data analysis as the art of modelling
+
+Now that we have established an intuitive understanding of what a model is, we are ready for the most important insight you should take away from this chapter: ***Data analysis is the art of building and interpreting statistical models.*** What this means, and what we will see throughout this book, is that data analysis always comes down to applying the fundamental principle described in the equation in [[Box1.1](#fig-Box1.1h)]{.content-visible when-format="html"} [[Box1.1](#fig-Box1.1l)]{.content-visible when-format="pdf"}. Let us unpack what this equation means.
+
+:::: {.content-visible when-format="html"}
+::: {#fig-Box1.1h .infobox style="--c:'Box 1.1 – Key idea';"}
+**The fundamental principle of data analysis** <br> $$
+Data = Model + Error
+$$
+:::
+::::
+
+::: {#fig-Box1.1l .content-visible when-format="pdf"}
+\definecolor{light}{HTML}{107895}
+
+\begin{tcolorbox}[skin=widget,
+halign=center,
+boxrule=.5mm,
+colframe=black,
+colback=light!10,
+width=(.9\linewidth),before=\hfill,after=\hfill]
+$$
+Data = Model + Error
+$$
+
+\end{tcolorbox}
+:::
+
+In the context of a scientific study, the phenomenon we wish to explain will be represented by a set of data. Our task is to build, based on the information at our disposal, an explanatory model that best accounts for these data.
+
+Suppose you hypothesize that well-being depends on income. You ask 100 people their income (in dollars) and measure their well-being on a scale ranging from 1 to 10. The scores of well-being would be the data we are trying to explain, and the income is the information we can use to build a model. Applying our general equation in [[Box1.1](#fig-Box1.1h)]{.content-visible when-format="html"} [[Box1.1](#fig-Box1.1l)]{.content-visible when-format="pdf"} to this imaginary data, we could obtain something like this:
+
+$$
+Wellbeing_i=-5.261+0.005 \times Income_i+Error_i
+$$ Or using more conventional notations:
+
+$$
+Y_i=-5.261+0.005X_i+e_i
+$$ {#eq-intro-ex}
+
+What the numbers in @eq-intro-ex mean, and how to obtain them, is not important now. We will cover that in due course. What matters at this point is that you get a feel of how the elements making up the fundamental equation shown in [[Box1.1](#fig-Box1.1h)]{.content-visible when-format="html"} [[Box1.1](#fig-Box1.1l)]{.content-visible when-format="pdf"} might look like in a concrete case.
+
+Now, let us use this concrete example to understand what our fundamental principle means. In @eq-intro-ex, the symbol $Y_i$ represents Well-being, our dependent variable. This is the thing we are trying to explain, the **Data**. (The subscript $i$ is there to remind us that $Y$, Well-being, can take different values. Its exact meaning will become clear later).
+
+The **Model** is given by the expression $-5.261+0.005X_i$, where $X_i$ represents Income, our independent variable. A [statistical model]{.mybold} is a mathematical expression, usually very simple, that generates guesses about what the data are. We say that the model makes [predictions]{.mybold} about the data. You can think of it a little prediction machine. And we can give it information to base its predictions on. In this case, for instance, we used Income, $X_i$, as an information for the model to use in generating predictions.
+
+::: definition
+A [statistical model]{.mybold} is a simple mathematical expression that generates guesses (predictions) about what each data point is.
+
+A model [prediction]{.mybold} is what a data point should be according to the model.
+:::
+
+But remember that our model will, as a rule, be a simplification of reality; it will not completely explain it. In practice, this means that there will be some discrepancies between our model predictions and the actual data. We say that our model will make [errors]{.mybold}. These errors are represented by the symbol $e_i$ in @eq-intro-ex.
+
+::: definition
+An [error]{.mybold} is the distance between a model prediction and the corresponding data point.
+:::
+
+Mathematically, an Error has a very straightforward definition. Given the general equation
+
+$$
+Data = Model + Error
+$$
+
+We can isolate the Error as follows
+
+$$
+Data - Model = Error
+$$
+
+Or
+
+$$
+Error = Data - Model
+$$ Using conventional notations, we express exactly the same equation as
+
+$$
+e_i = Y_i - \hat{Y}_i
+$$ Where $\hat{Y}_i$ represents the predictions made by our model.
+
+### Two criteria that define a good model
+
+A statistical model, we saw, is just a mathematical expression that generates predictions about what the data are. Based on this definition alone, we have infinitely many options as to what particular model we choose for a given set of data. So how do we choose? There are two criteria that will guide us in our choice.
+
+The first criterion is the most obvious: **our model should make the least possible amount of errors in its predictions**. At the end of the day, our purpose is to explain the phenomenon represented by the data. The more our model predictions differ from the data, the further it gets from achieving this purpose. In other words, the less errors our model makes, the better it explains the data.
+
+The second criterion is more subtle. To understand it, remember why we use models in the first place. We know that the data we are trying to explain represent a complex reality generated by a vast amount of intricate causal processes. The point of using a model is to simplify this complexity by extracting relevant information that is useful to us (see @sec-mod-sub2). In other words, the very usefulness of a model lies in its simplicity. Thus, **our model should be as simple as possible**.
+
+blabla
+
+::::: {.content-visible when-format="html"}
+:::: {#fig-Box1.2h .infobox style="--c:'Box 1.2 – Key idea';"}
+::: {style="text-align:center !important;"} 
+**Two virtues of a good model** 
+:::
+
+::: {style="text-align:left !important;"} 
+<p>***Accuracy***: A good model should make as little prediction error as possible.</p>
+
+<p>***Simplicity***: A good model should be as simple as possible.</p>
+:::
+
+::::
+:::::
+
+::: {#fig-Box1.2l .content-visible when-format="pdf"}
+\definecolor{light}{HTML}{107895}
+
+\begin{tcolorbox}[skin=widget,
+halign=center,
+boxrule=.5mm,
+colframe=black,
+colback=light!10,
+width=(.9\linewidth),before=\hfill,after=\hfill]
+**Two virtues of a good model** <br> 
+
+***Accuracy***: A good model should make as little prediction error as possible.<br>
+
+***Simplicity***: A good model should be as simple as possible.
+
+\end{tcolorbox}
+:::

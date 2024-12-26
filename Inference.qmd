@@ -1,0 +1,21 @@
+---
+title: "Inference"
+---
+
+
+
+## The sampling distribution
+
+!["Illustration of the imaginary process generating the sampling distribution of the mean"](images/Sampling_dist.png){fig-align="center fig-dpi=330}
+
+
+
+```{r}
+
+source(here::here("scripts", "Sampling_dist.R"))
+
+samp_dist_p
+
+
+```
+
