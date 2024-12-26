@@ -78,4 +78,8 @@ toc-active, .toc-active, csl-entry, .csl-entry {
   text-align: var(--other-text-align)
 }
 
+.MathJax_Display {
+   margin: 5em 0em !important;
+}
+
 
