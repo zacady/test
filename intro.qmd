@@ -1,4 +1,4 @@
-# Introduction
+# Introduction: turning questions into models 
 
 Suppose you are a researcher interested in the underpinnings of human well-being. In simple terms, your question is: *How does human well-being work?* Trying to answer such a broad question might sound a bit overwhelming at first. Where do you even start? Well, a good place to start is to make a simple but fundamental observation: well-being is not identical for everyone at all times. Some people seem to fare better than others, and the same individuals will feel more or less content and happy at different points in their lives. To convey this fact we say that well-being is a [variable]{.mybold}. Looking at well-being as a variable is useful because it lets you reformulate your original question in a more precise and approachable way: why is it that some people are happier than others? Why do people feel better at some moments in their life and less so at others? To understand how well-being works, you would need to explain this variability.
 
@@ -55,7 +55,7 @@ Thirdly, notice that we are stating something that we don't actually know. Maybe
 To make this last point clearer, consider the statement *well-being is undermined by memories of childhood trauma even if those memories have been suppressed*. Try to think of an observation that would prove this statement wrong. For instance, you could ask a large number of individuals to recall any childhood trauma and then compare the well-being of those who recall traumatic experiences to the well-being of those who don't. But even if well-being turns to be exactly the same in both groups, the statement implies that those who don't recall any trauma could have in fact suppressed such memories. Whatever observation we make, it seems that we can always "save" the statement from being proven wrong by invoking the notion that memories can be suppressed and, hence, can remain undetected. This statement thus appears unfalsifiable. It is **not** a valid hypothesis.
 
 ::: definition
-A [hypothesis]{.mybold} is a statement, either about a variable or (more typically) about the relationship between variables, which is in principle falsifiable through observation.
+*A* [hypothesis]{.mybold} *is a statement, either about a variable or (more typically) about the relationship between variables, which is in principle falsifiable through observation.*
 :::
 
 Note how the definition above leaves room for hypotheses that concern only one variable. For instance, the statement "Among humans, it is more frequent to be born a female than a male" is a valid hypothesis (it is a falsifiable statement) that refers to one variable only (sex).
@@ -65,7 +65,7 @@ Note how the definition above leaves room for hypotheses that concern only one v
 When we hypothesize that two variables are related, we usually specify the relationship a bit further. If I say *Well-being is affected by income*, well-being and income are both variables, but one (well-being) is the thing we are trying to explain whereas the other (income) is the proposed explanation. We call them [dependent variable]{.mybold} and [independent variable]{.mybold}, respectively (see @fig-var).
 
 ::: definition
-In the context of a hypothesis, the [dependent variable]{.mybold} is the variable that we are trying to explain whereas the [independent variable]{.mybold} is the variable that we hypothesize to explain the dependent variable.
+*In the context of a hypothesis, the* [dependent variable]{.mybold} *is the variable that we are trying to explain whereas the* [independent variable]{.mybold} *is the variable that we hypothesize to explain the dependent variable.*
 :::
 
 ```{dot}
@@ -174,7 +174,7 @@ Example of model (the world map) of a complex reality (the earth's surface)
 Consider for instance a simple map of the world, like the one shown in @fig-models. In a sense, we can say that such a map describes the surface of our planet. Of course, it does so in a very incomplete and inaccurate way: lots of complicated stuff that characterize the earth's surface at any given time are not depicted on this map, like weather-related processes happening in the atmosphere, variations in topography, the organisation and movement of tectonic plates, water streams circulating in the oceans or the many billions of living creatures populating the surface. But it is precisely because such a map is an incomplete description that it is useful to us. By extracting a few features from a highly complex reality, it makes it manageable for our minds to grasp relevant information which, otherwise, would be drown in an ocean of complexity. Thanks to the simplicity of the map, we can clearly identify the parts of the earth's surface that are not covered by water, how this landmass was partitioned into countries by humans, and their geographic locations relative to the poles and the equator. The map is thus a **simplification** of the reality it aims to describe – *i.e.*, the earth's surface. But it is an informative simplification. We can say that the map is a [model]{.mybold} of the earth's surface.
 
 ::: definition
-A [model]{.mybold} is a simplified representation, which aims at describing relevant aspects of reality while ignoring others.
+*A* [model]{.mybold} *is a simplified representation, which aims at describing relevant aspects of reality while ignoring others.*
 :::
 
 ### Data analysis as the art of modelling
@@ -229,15 +229,15 @@ Now, let us use this example to understand what our fundamental principle means.
 The **Model** is given by the expression $-5.261+0.005X_i$, where $X_i$ represents Income, our independent variable. A [statistical model]{.mybold}, like this one, is a mathematical expression, usually very simple, that generates guesses about what the data are. We say that the model makes [predictions]{.mybold} about the data. You can think of it a little prediction machine. And we can give it information to base its predictions on. In this case, for instance, we used Income, $X_i$, as an information for the model to use in generating predictions.
 
 ::: definition
-A [statistical model]{.mybold} is a simple mathematical expression that generates guesses (predictions) about what each data point is.
+*A* [statistical model]{.mybold} *is a simple mathematical expression that generates guesses (predictions) about what each data point is.*
 
-A model [prediction]{.mybold} is what a data point should be according to the model.
+*A model* [prediction]{.mybold} *is what a data point should be according to the model.*
 :::
 
 But remember that our model will, as a rule, be a simplification of reality; it will not completely explain the data. In practice, this means that there will be some discrepancies between our model predictions and the actual data. We say that our model will make [errors]{.mybold}. These errors are represented by the symbol $e_i$ in @eq-intro-ex.
 
 ::: definition
-An [error]{.mybold} is the distance between a model prediction and the corresponding data point.
+*An* [error]{.mybold} *is the distance between a model prediction and the corresponding data point.*
 :::
 
 Mathematically, an error has a very straightforward definition. Given the general equation

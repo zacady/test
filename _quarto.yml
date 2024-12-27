@@ -12,9 +12,9 @@ book:
   chapters:
     - index.qmd
     - intro.qmd
-    - Logic.qmd
-    - Probability.qmd
-    - summary.qmd
+    #- Logic.qmd
+    #- Probability.qmd
+    #- summary.qmd
     - references.qmd
 
 bibliography: references.bib
