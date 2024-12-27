@@ -22,7 +22,7 @@ But what do we mean exactly when we use the word "well-being"? Is it the same as
 
 For instance, having thoroughly reviewed the existing knowledge on the topic, you might conclude that the notion of well-being can be defined as a special case of the sentiment of satisfaction. This sentiment of satisfaction, you add, is not related to any particular aspect of the person's life, but rather about all aspects considered together. Hence, you decide to define well-being as *an individual's degree of satisfaction with their life considered in all its aspects*. This would be your theoretical variable.
 
-Note that defining a theoretical variable (well-being, in this case) has less do to with laying out what well-being 'truly is' than with being clear about what *you mean* when using the term.[^intro-1] After all, definitions of terms are conventional: a term can be said to have a "true meaning" only in the sense of a meaning that is agreed upon by some set of people. What matters the most when defining your theoretical variable is to be clear – *i.e.*, to leave as little ambiguity as possible regarding what it does and does not refer to in the real world. But this does not mean that you can just ignore how you theoretical variable is usually defined by other scientists, or even among the general public. Conventions in terminology facilitate smooth communication, and departing from them can result in misunderstandings. Claiming to study "well-being" while actually defining that term as an individual's preference for cats over dogs would be unreasonably confusing, no matter how clear the definition. In sum, you should depart from conventional definitions only if you have good reasons to do so, such as when it helps distinguishing better from closely related terms.
+Note that defining a theoretical variable (well-being, in this case) has less do to with laying out what well-being 'truly is' than with being clear about what *you mean* when using the term.[^intro-1] After all, definitions of terms are conventional: a term can be said to have a "true meaning" only in the sense of a meaning that is agreed upon by some set of people. What matters the most when defining your theoretical variable is to be clear – *i.e.*, to leave as little ambiguity as possible regarding what it does and does not refer to in the real world. But this does not mean that you can just ignore how you theoretical variable is usually defined by other scientists, or even among the general public. Conventions in terminology facilitate smooth communication, and departing from them can result in misunderstandings. Claiming to study "well-being" while actually defining that term as an individual's preference for cats over dogs would be unreasonably confusing, no matter how clear the definition. In sum, you should depart from conventional definitions only if you have good reasons to do so, such as when it helps distinguishing your theoretical variable better from closely related concepts.
 
 [^intro-1]: The philosopher of science Karl Popper [@popper2020] has criticized the view – which he associates with Aristotle – that concepts have a true essence that our definition should reflect. Rather, Popper argues, scientific concepts are just labels that we put on real-world processes. Thus, it does not really matter which label we use to refer to a given process, as long as we clearly define what our label refers to and use our terminology consistently. Popper refers to his view as "methodological nominalism" as opposed to Aristotle's "methodological essentialism".
 
@@ -55,8 +55,10 @@ A third notable feature is that we are stating something that we don't actually 
 To make this last point clearer, consider the statement *well-being is undermined by memories of childhood trauma even if they have been suppressed*. Try to think of an observation that would prove this statement wrong. For instance, you could ask a large number of individuals to recall any childhood trauma and then compare the well-being of those who recall traumatic experiences to the well-being of those who don't. But even if well-being turns to be exactly the same in both groups, the statement implies that those who don't recall any trauma could have in fact suppressed such memories. Whatever observation we make, it seems that we can always "save" the statement from being proven wrong by invoking the notion that memories can be suppressed and, hence, can remain undetected. This statement thus appears unfalsifiable. It is **not** a valid hypothesis.
 
 ::: definition
-A [hypothesis]{.mybold} is a statement about the relationship between variables which is in principle falsifiable through observation.
+A [hypothesis]{.mybold} is a statement, either about a variable or (more tyically) about the relationship between variables, which is in principle falsifiable through observation.
 :::
+
+Note how the definition above leaves room for hypotheses that concern only one variable. For instance, the statement "Among humans, it is more frequent to be born a female than a male" is a valid hypothesis although it refers to one variable only: sex. It is a hypothesis about the distribution of one variable. 
 
 ### Dependent and independent variables
 
@@ -91,7 +93,7 @@ digraph G {
 
 Note that this not the only terminology used by scientists. A dependent variable is also called an **outcome** or a **response variable**. And an independent variable is also referred to as a **predictor** or an **explanatory variable**.
 
-One reason often invoked for preferring alternative terms is that the terminology of dependent and independent variable is usually understood as implying a causal relationship. And causality is a very difficult thing to test.
+One reason often invoked for preferring alternative terms is that the terminology of dependent and independent variable is usually understood as implying a causal relationship. And causality is a very difficult thing to test. Thus, when researchers do not have the means of testing the existence a causal relationship, they often opt for a terminology that does not evoke causality in the first place.
 
 ### Theoretical and operational hypotheses
 
@@ -131,12 +133,7 @@ And finally, even if we knew all the relevant variables and understood how exact
 
 Thus, our attempts at explaining a phenomenon will necessarily result in a simplification of reality. This might sound disappointing. But simplifying reality can actually be a very useful thing to do.
 
-Consider for instance a simple map of the world, like the one shown in @fig-models. In a sense, we can say that such a map describes the surface of our planet. Of course, it does so in a very incomplete and inaccurate way: lots of complicated stuff are constantly happening on earth which are not depicted on this map, like weather-related processes happening in the atmosphere, the organisation and movement of tectonic plates, water streams circulating in the oceans or the billions of living creatures populating the surface. But it is precisely because such a map is an incomplete description that it is useful to us. By extracting a few features from a highly complex reality, it makes it manageable for our minds to grasp relevant information which, otherwise, would be drown in an ocean of complexity. Thanks to the simplicity of the map, we can clearly identify the parts of the earth's surface that are not covered by water, how this landmass was partitioned into countries by humans, and their geographic positions relative to the poles and the equator. The map is thus a **simplification** of the reality it aims to describe – *i.e.*, the earth's surface. But it is an informative simplification. We can say that the map is a [model]{.mybold} of the earth's surface.
-
-::: definition
-A [model]{.mybold} is a simplified representation, which aims at describing relevant aspects of reality while ignoring others.
-:::
-
+:::: {style="margin-top:2em !important; margin-bottom:2em !important;"}
 ::: {#fig-models layout="[ 45, 55 ]" layout-valign="center"}
 ![](images/Earth.jpg)
 
@@ -171,6 +168,13 @@ ggplot(data = world_dt) +
 ```
 
 Example of model (the world map) of a complex reality (the earth's surface)
+:::
+::::
+
+Consider for instance a simple map of the world, like the one shown in @fig-models. In a sense, we can say that such a map describes the surface of our planet. Of course, it does so in a very incomplete and inaccurate way: lots of complicated stuff are constantly happening on earth which are not depicted on this map, like weather-related processes happening in the atmosphere, the organisation and movement of tectonic plates, water streams circulating in the oceans or the billions of living creatures populating the surface. But it is precisely because such a map is an incomplete description that it is useful to us. By extracting a few features from a highly complex reality, it makes it manageable for our minds to grasp relevant information which, otherwise, would be drown in an ocean of complexity. Thanks to the simplicity of the map, we can clearly identify the parts of the earth's surface that are not covered by water, how this landmass was partitioned into countries by humans, and their geographic positions relative to the poles and the equator. The map is thus a **simplification** of the reality it aims to describe – *i.e.*, the earth's surface. But it is an informative simplification. We can say that the map is a [model]{.mybold} of the earth's surface.
+
+::: definition
+A [model]{.mybold} is a simplified representation, which aims at describing relevant aspects of reality while ignoring others.
 :::
 
 ### Data analysis as the art of modelling
@@ -262,8 +266,6 @@ The first criterion is the most obvious: **our model should make the least possi
 
 The second criterion is more subtle. To understand it, remember why we use models in the first place. We know that the data we are trying to explain represent a complex reality generated by a vast amount of intricate causal processes. The point of using a model is to simplify this complexity by extracting relevant information that is useful to us (see @sec-mod-sub2). In other words, the very usefulness of a model lies in its simplicity. Thus, **our model should be as simple as possible**.
 
-blabla
-
 ::::: {.content-visible when-format="html"}
 :::: {#fig-Box1.2h .infobox style="--c:'Box 1.2 – Key idea';"}
 ::: {style="text-align:center !important;"} 
@@ -271,9 +273,9 @@ blabla
 :::
 
 ::: {style="text-align:left !important;"} 
-<p>***Accuracy***: A good model should make as little prediction error as possible.</p>
+<p>**Accuracy**: *A good model should make as little prediction error as possible*.</p>
 
-<p>***Simplicity***: A good model should be as simple as possible.</p>
+<p>**Simplicity**: *A good model should be as simple as possible*.</p>
 :::
 
 ::::
