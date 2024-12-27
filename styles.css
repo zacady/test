@@ -36,6 +36,12 @@
     background: 5px center / 3em no-repeat rgba(16, 120, 149, 0.1);
 }
 
+.infobox .math.display .MathJax {
+   margin-top: 2em !important;
+   margin-bottom: 1em !important;
+   color: black;
+}
+
 .infobox::before {
     content: var(--c);
     width: 10rem;
