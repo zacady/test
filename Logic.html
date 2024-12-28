@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>2&nbsp; Elements of logic – Data Analysis for the Social Sciences</title>
+<title>2&nbsp; An introduction to inductive logic – Data Analysis for the Social Sciences</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -50,7 +50,7 @@ div.csl-indent {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./Probability.html" rel="next">
+<link href="./references.html" rel="next">
 <link href="./intro.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -133,7 +133,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./Logic.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Elements of logic</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./Logic.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">An introduction to inductive logic</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -167,25 +167,13 @@ window.Quarto = {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./intro.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></span></a>
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction: turning questions into models</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./Logic.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Elements of logic</span></span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./Probability.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Elements of probability theory</span></span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./summary.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Summary</span></span></a>
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">An introduction to inductive logic</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -220,7 +208,7 @@ window.Quarto = {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Elements of logic</span></h1>
+<h1 class="title"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">An introduction to inductive logic</span></h1>
 </div>
 
 
@@ -237,22 +225,32 @@ window.Quarto = {
 </header>
 
 
-<p>As researchers, we would like to contribute in generating new knowledge about reality. As social scientists, in particular, we might put forth explanations of why humans feel, think, and behave in certain ways in certain situations.</p>
-<p>As researchers, we would like to make statements about the world that are true. But distinguishing true statements from false ones is far from self-evident. Hence, we should think of a statement as true only if we have <em>reasons</em> to do so. In logic, such reasons are called <span class="mybold">arguments</span>.</p>
-<p>Not all arguments are of the same nature. Consider the following examples:</p>
-<p>Some notions of logic are useful</p>
+<p>In the previous chapter, we outlined a general strategy to approach the highly complicated objects that social scientists typically aim to study. Starting from a broad question about a theoretical variable (<em>How does well-being work?</em>), we ended up with the task of building statistical models designed to explain a set of data which represent our variable of interest. Our hope is that, thanks to its simplicity, our model will help us learn something about the complicated processes that underlie our phenomenon of interest.</p>
+<p>But there is a problem with this strategy. When we ask a question like <em>What are the determinants of human well-being?</em>, the answers we are seeking are general ones. Thus, when we formulate a hypothesis as one tentative answer that we would like to test, we will typically give the form of a general statement (<em>e.g., Income increases well-being</em>). On the other hand, when we get to the part where we build a statistical model, we are now dealing with a particular set of data obtained in the context of a particular study. Our problem, then, is the following: can we learn something about a general statement based on observations made in a particular set of data?</p>
+<p>In this chapter, we will define this problem from a logical perspective. Assuming that, as researchers, we strive to make statements about the world that are true, it is important to acknowledge that distinguishing true statements from false ones is far from self-evident. Thus, we should think of a statement as true only if we have reasons to do so. Such reasons, together with the conclusion they are meant to support form what logicians call an <span class="mybold">argument</span>.</p>
 <section id="arguments" class="level2" data-number="2.1">
 <h2 data-number="2.1" class="anchored" data-anchor-id="arguments"><span class="header-section-number">2.1</span> Arguments</h2>
-<p>Arguments are made up of basic statements called <span class="mybold">propositions</span>.</p>
+<p>Arguments are made up of basic statements called <span class="mybold">propositions</span>. Propositions are the building blocks of arguments. An important feature of propositions is that they are either true or false. This means that questions or orders are not propositions because they cannot be said to be true or false.</p>
 <div class="definition">
 <p><span class="mybold">Propositions</span> <em>are basic statements that are either true or false.</em></p>
 </div>
 <p>Two types of propositions form an argument: the <span class="mybold">premises</span> and the <span class="mybold">conclusion</span>.</p>
+<p>The premises are the propositions forming the basis on which the argument rests. The are the starting point of the argument. The conclusion, on the other hand, is the end point of the argument. It is the proposition which, according to the argument, is justified by the premises.</p>
 <div class="definition">
-<p>The <span class="mybold">premises</span> <em>are the reasons invoked to justify the conclusion.</em></p>
-<p>The <span class="mybold">conclusion</span> <em>is the proposition inferred based on the premises.</em></p>
+<p><em>The</em> <span class="mybold">premises</span> <em>are the propositions invoked to justify the conclusion.</em></p>
+<p><em>The</em> <span class="mybold">conclusion</span> <em>is the proposition inferred based on the premises.</em></p>
 </div>
-<p>The <span class="mybold">premises</span> are propositions forming the basis on which the argument rests. The conclusion is the proposition</p>
+<p>Thus, if I say:</p>
+<blockquote class="blockquote">
+<p>I am always in a bad mood before I drink a coffee, which I haven’t yet. So, I am in a bad mood.</p>
+</blockquote>
+<p>I can re-write my argument as follows:</p>
+<blockquote class="blockquote">
+<p>Argument (1)</p>
+<p><strong>Premise 1</strong>: I am always in a bad mood before I drink coffee.</p>
+<p><strong>Premise 2</strong>: I didn’t drink a coffee yet.</p>
+<p><strong>Conclusion</strong>: I am in a bad mood.</p>
+</blockquote>
 <blockquote class="blockquote">
 <p><strong>(P1)</strong>: <em>This orange is good.</em></p>
 <p><strong>Therefore</strong>: <em>All oranges in the box are good.</em></p>
@@ -296,7 +294,7 @@ Table&nbsp;2.1: Determining the soundness of deductive arguments
 </figcaption>
 <div aria-describedby="tbl-arg-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell-output-display">
-<div class="tabwid"><style>.cl-2b9f7c44{}.cl-2b9bd152{font-family:'Helvetica';font-size:11pt;font-weight:bold;font-style:normal;text-decoration:none;color:rgba(0, 0, 0, 1.00);background-color:transparent;}.cl-2b9bd166{font-family:'Helvetica';font-size:11pt;font-weight:normal;font-style:normal;text-decoration:none;color:rgba(0, 0, 0, 1.00);background-color:transparent;}.cl-2b9d43c0{margin:0;text-align:center;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:5pt;padding-top:5pt;padding-left:5pt;padding-right:5pt;line-height: 1;background-color:transparent;}.cl-2b9d43ca{margin:0;text-align:center;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:5pt;padding-top:5pt;padding-left:5pt;padding-right:5pt;line-height: 2.7;background-color:transparent;}.cl-2b9d4e38{width:0.9in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-2b9d4e42{width:1.297in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-2b9d4e43{width:0.9in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-2b9d4e4c{width:1.297in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-2b9d4e4d{width:0.9in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-2b9d4e4e{width:1.297in;background-color:transparent;vertical-align: middle;border-bottom: 1pt solid rgba(0, 0, 0, 1.00);border-top: 1pt solid rgba(0, 0, 0, 1.00);border-left: 1pt solid rgba(0, 0, 0, 1.00);border-right: 1pt solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}</style><table data-quarto-disable-processing="true" class="cl-2b9f7c44"><thead><tr style="overflow-wrap:break-word;"><th class="cl-2b9d4e38"><p class="cl-2b9d43c0"><span class="cl-2b9bd152"></span></p></th><th class="cl-2b9d4e38"><p class="cl-2b9d43c0"><span class="cl-2b9bd152"></span></p></th><th colspan="2" class="cl-2b9d4e42"><p class="cl-2b9d43c0"><span class="cl-2b9bd152">Reasoning</span></p></th></tr><tr style="overflow-wrap:break-word;"><th class="cl-2b9d4e43"><p class="cl-2b9d43c0"><span class="cl-2b9bd166">  </span></p></th><th class="cl-2b9d4e43"><p class="cl-2b9d43c0"><span class="cl-2b9bd166"> </span></p></th><th class="cl-2b9d4e4c"><p class="cl-2b9d43c0"><span class="cl-2b9bd166">Valid</span></p></th><th class="cl-2b9d4e4c"><p class="cl-2b9d43c0"><span class="cl-2b9bd166">Invalid</span></p></th></tr></thead><tbody><tr style="overflow-wrap:break-word;"><td rowspan="2" class="cl-2b9d4e4d"><p class="cl-2b9d43ca"><span class="cl-2b9bd152">Premises</span></p></td><td class="cl-2b9d4e4d"><p class="cl-2b9d43ca"><span class="cl-2b9bd166">All true</span></p></td><td class="cl-2b9d4e4e"><p class="cl-2b9d43ca"><span class="cl-2b9bd166">Sound</span></p></td><td class="cl-2b9d4e4e"><p class="cl-2b9d43ca"><span class="cl-2b9bd166">Unsound</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-2b9d4e4d"><p class="cl-2b9d43ca"><span class="cl-2b9bd166">Not all true</span></p></td><td class="cl-2b9d4e4e"><p class="cl-2b9d43ca"><span class="cl-2b9bd166">Unsound</span></p></td><td class="cl-2b9d4e4e"><p class="cl-2b9d43ca"><span class="cl-2b9bd166">Unsound</span></p></td></tr></tbody></table></div>
+<div class="tabwid"><style>.cl-07d1ab40{}.cl-07ce4a72{font-family:'Helvetica';font-size:11pt;font-weight:bold;font-style:normal;text-decoration:none;color:rgba(0, 0, 0, 1.00);background-color:transparent;}.cl-07ce4a7c{font-family:'Helvetica';font-size:11pt;font-weight:normal;font-style:normal;text-decoration:none;color:rgba(0, 0, 0, 1.00);background-color:transparent;}.cl-07cfad68{margin:0;text-align:center;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:5pt;padding-top:5pt;padding-left:5pt;padding-right:5pt;line-height: 1;background-color:transparent;}.cl-07cfad72{margin:0;text-align:center;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:5pt;padding-top:5pt;padding-left:5pt;padding-right:5pt;line-height: 2.7;background-color:transparent;}.cl-07cfb812{width:0.9in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-07cfb81c{width:1.297in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-07cfb81d{width:0.9in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-07cfb81e{width:1.297in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-07cfb81f{width:0.9in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-07cfb830{width:1.297in;background-color:transparent;vertical-align: middle;border-bottom: 1pt solid rgba(0, 0, 0, 1.00);border-top: 1pt solid rgba(0, 0, 0, 1.00);border-left: 1pt solid rgba(0, 0, 0, 1.00);border-right: 1pt solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}</style><table data-quarto-disable-processing="true" class="cl-07d1ab40"><thead><tr style="overflow-wrap:break-word;"><th class="cl-07cfb812"><p class="cl-07cfad68"><span class="cl-07ce4a72"></span></p></th><th class="cl-07cfb812"><p class="cl-07cfad68"><span class="cl-07ce4a72"></span></p></th><th colspan="2" class="cl-07cfb81c"><p class="cl-07cfad68"><span class="cl-07ce4a72">Reasoning</span></p></th></tr><tr style="overflow-wrap:break-word;"><th class="cl-07cfb81d"><p class="cl-07cfad68"><span class="cl-07ce4a7c">  </span></p></th><th class="cl-07cfb81d"><p class="cl-07cfad68"><span class="cl-07ce4a7c"> </span></p></th><th class="cl-07cfb81e"><p class="cl-07cfad68"><span class="cl-07ce4a7c">Valid</span></p></th><th class="cl-07cfb81e"><p class="cl-07cfad68"><span class="cl-07ce4a7c">Invalid</span></p></th></tr></thead><tbody><tr style="overflow-wrap:break-word;"><td rowspan="2" class="cl-07cfb81f"><p class="cl-07cfad72"><span class="cl-07ce4a72">Premises</span></p></td><td class="cl-07cfb81f"><p class="cl-07cfad72"><span class="cl-07ce4a7c">All true</span></p></td><td class="cl-07cfb830"><p class="cl-07cfad72"><span class="cl-07ce4a7c">Sound</span></p></td><td class="cl-07cfb830"><p class="cl-07cfad72"><span class="cl-07ce4a7c">Unsound</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-07cfb81f"><p class="cl-07cfad72"><span class="cl-07ce4a7c">Not all true</span></p></td><td class="cl-07cfb830"><p class="cl-07cfad72"><span class="cl-07ce4a7c">Unsound</span></p></td><td class="cl-07cfb830"><p class="cl-07cfad72"><span class="cl-07ce4a7c">Unsound</span></p></td></tr></tbody></table></div>
 </div>
 </div>
 </figure>
@@ -355,23 +353,23 @@ Figure&nbsp;2.2: An example of sets
 </div>
 <div class="cell">
 <div class="cell-output-display">
-<div id="jqgyjcudvn" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#jqgyjcudvn table {
+<div id="jessqhlifz" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#jessqhlifz table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#jqgyjcudvn thead, #jqgyjcudvn tbody, #jqgyjcudvn tfoot, #jqgyjcudvn tr, #jqgyjcudvn td, #jqgyjcudvn th {
+#jessqhlifz thead, #jessqhlifz tbody, #jessqhlifz tfoot, #jessqhlifz tr, #jessqhlifz td, #jessqhlifz th {
   border-style: none;
 }
 
-#jqgyjcudvn p {
+#jessqhlifz p {
   margin: 0;
   padding: 0;
 }
 
-#jqgyjcudvn .gt_table {
+#jessqhlifz .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -397,12 +395,12 @@ Figure&nbsp;2.2: An example of sets
   border-left-color: #D3D3D3;
 }
 
-#jqgyjcudvn .gt_caption {
+#jessqhlifz .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#jqgyjcudvn .gt_title {
+#jessqhlifz .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -414,7 +412,7 @@ Figure&nbsp;2.2: An example of sets
   border-bottom-width: 0;
 }
 
-#jqgyjcudvn .gt_subtitle {
+#jessqhlifz .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -426,7 +424,7 @@ Figure&nbsp;2.2: An example of sets
   border-top-width: 0;
 }
 
-#jqgyjcudvn .gt_heading {
+#jessqhlifz .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -438,13 +436,13 @@ Figure&nbsp;2.2: An example of sets
   border-right-color: #D3D3D3;
 }
 
-#jqgyjcudvn .gt_bottom_border {
+#jessqhlifz .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#jqgyjcudvn .gt_col_headings {
+#jessqhlifz .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -459,7 +457,7 @@ Figure&nbsp;2.2: An example of sets
   border-right-color: #D3D3D3;
 }
 
-#jqgyjcudvn .gt_col_heading {
+#jessqhlifz .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -479,7 +477,7 @@ Figure&nbsp;2.2: An example of sets
   overflow-x: hidden;
 }
 
-#jqgyjcudvn .gt_column_spanner_outer {
+#jessqhlifz .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -491,15 +489,15 @@ Figure&nbsp;2.2: An example of sets
   padding-right: 4px;
 }
 
-#jqgyjcudvn .gt_column_spanner_outer:first-child {
+#jessqhlifz .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#jqgyjcudvn .gt_column_spanner_outer:last-child {
+#jessqhlifz .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#jqgyjcudvn .gt_column_spanner {
+#jessqhlifz .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -511,11 +509,11 @@ Figure&nbsp;2.2: An example of sets
   width: 100%;
 }
 
-#jqgyjcudvn .gt_spanner_row {
+#jessqhlifz .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#jqgyjcudvn .gt_group_heading {
+#jessqhlifz .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -541,7 +539,7 @@ Figure&nbsp;2.2: An example of sets
   text-align: left;
 }
 
-#jqgyjcudvn .gt_empty_group_heading {
+#jessqhlifz .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -556,15 +554,15 @@ Figure&nbsp;2.2: An example of sets
   vertical-align: middle;
 }
 
-#jqgyjcudvn .gt_from_md > :first-child {
+#jessqhlifz .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#jqgyjcudvn .gt_from_md > :last-child {
+#jessqhlifz .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#jqgyjcudvn .gt_row {
+#jessqhlifz .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -583,7 +581,7 @@ Figure&nbsp;2.2: An example of sets
   overflow-x: hidden;
 }
 
-#jqgyjcudvn .gt_stub {
+#jessqhlifz .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -596,7 +594,7 @@ Figure&nbsp;2.2: An example of sets
   padding-right: 5px;
 }
 
-#jqgyjcudvn .gt_stub_row_group {
+#jessqhlifz .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -610,15 +608,15 @@ Figure&nbsp;2.2: An example of sets
   vertical-align: top;
 }
 
-#jqgyjcudvn .gt_row_group_first td {
+#jessqhlifz .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#jqgyjcudvn .gt_row_group_first th {
+#jessqhlifz .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#jqgyjcudvn .gt_summary_row {
+#jessqhlifz .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -628,16 +626,16 @@ Figure&nbsp;2.2: An example of sets
   padding-right: 5px;
 }
 
-#jqgyjcudvn .gt_first_summary_row {
+#jessqhlifz .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#jqgyjcudvn .gt_first_summary_row.thick {
+#jessqhlifz .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#jqgyjcudvn .gt_last_summary_row {
+#jessqhlifz .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -647,7 +645,7 @@ Figure&nbsp;2.2: An example of sets
   border-bottom-color: #D3D3D3;
 }
 
-#jqgyjcudvn .gt_grand_summary_row {
+#jessqhlifz .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -657,7 +655,7 @@ Figure&nbsp;2.2: An example of sets
   padding-right: 5px;
 }
 
-#jqgyjcudvn .gt_first_grand_summary_row {
+#jessqhlifz .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -667,7 +665,7 @@ Figure&nbsp;2.2: An example of sets
   border-top-color: #D3D3D3;
 }
 
-#jqgyjcudvn .gt_last_grand_summary_row_top {
+#jessqhlifz .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -677,11 +675,11 @@ Figure&nbsp;2.2: An example of sets
   border-bottom-color: #D3D3D3;
 }
 
-#jqgyjcudvn .gt_striped {
+#jessqhlifz .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#jqgyjcudvn .gt_table_body {
+#jessqhlifz .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -690,7 +688,7 @@ Figure&nbsp;2.2: An example of sets
   border-bottom-color: #D3D3D3;
 }
 
-#jqgyjcudvn .gt_footnotes {
+#jessqhlifz .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -704,7 +702,7 @@ Figure&nbsp;2.2: An example of sets
   border-right-color: #D3D3D3;
 }
 
-#jqgyjcudvn .gt_footnote {
+#jessqhlifz .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -713,7 +711,7 @@ Figure&nbsp;2.2: An example of sets
   padding-right: 5px;
 }
 
-#jqgyjcudvn .gt_sourcenotes {
+#jessqhlifz .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -727,7 +725,7 @@ Figure&nbsp;2.2: An example of sets
   border-right-color: #D3D3D3;
 }
 
-#jqgyjcudvn .gt_sourcenote {
+#jessqhlifz .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -735,63 +733,63 @@ Figure&nbsp;2.2: An example of sets
   padding-right: 5px;
 }
 
-#jqgyjcudvn .gt_left {
+#jessqhlifz .gt_left {
   text-align: left;
 }
 
-#jqgyjcudvn .gt_center {
+#jessqhlifz .gt_center {
   text-align: center;
 }
 
-#jqgyjcudvn .gt_right {
+#jessqhlifz .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#jqgyjcudvn .gt_font_normal {
+#jessqhlifz .gt_font_normal {
   font-weight: normal;
 }
 
-#jqgyjcudvn .gt_font_bold {
+#jessqhlifz .gt_font_bold {
   font-weight: bold;
 }
 
-#jqgyjcudvn .gt_font_italic {
+#jessqhlifz .gt_font_italic {
   font-style: italic;
 }
 
-#jqgyjcudvn .gt_super {
+#jessqhlifz .gt_super {
   font-size: 65%;
 }
 
-#jqgyjcudvn .gt_footnote_marks {
+#jessqhlifz .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#jqgyjcudvn .gt_asterisk {
+#jessqhlifz .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#jqgyjcudvn .gt_indent_1 {
+#jessqhlifz .gt_indent_1 {
   text-indent: 5px;
 }
 
-#jqgyjcudvn .gt_indent_2 {
+#jessqhlifz .gt_indent_2 {
   text-indent: 10px;
 }
 
-#jqgyjcudvn .gt_indent_3 {
+#jessqhlifz .gt_indent_3 {
   text-indent: 15px;
 }
 
-#jqgyjcudvn .gt_indent_4 {
+#jessqhlifz .gt_indent_4 {
   text-indent: 20px;
 }
 
-#jqgyjcudvn .gt_indent_5 {
+#jessqhlifz .gt_indent_5 {
   text-indent: 25px;
 }
 </style>
@@ -1262,13 +1260,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./intro.html" class="pagination-link" aria-label="Introduction">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></span>
+      <a href="./intro.html" class="pagination-link" aria-label="Introduction: turning questions into models">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction: turning questions into models</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./Probability.html" class="pagination-link" aria-label="Elements of probability theory">
-        <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Elements of probability theory</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./references.html" class="pagination-link" aria-label="References">
+        <span class="nav-page-text">References</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
