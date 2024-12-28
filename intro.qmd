@@ -226,7 +226,7 @@ What the numbers in @eq-intro-ex mean, and how to obtain them, is not important 
 
 Now, let us use this example to understand what our fundamental principle means. In @eq-intro-ex, the symbol $Y_i$ represents Well-being, our dependent variable. This is the thing we are trying to explain, the **Data**. (The subscript $i$ is there to remind us that $Y$, Well-being, can take different values. Its exact meaning will become clear in the next chapters).
 
-The **Model** is given by the expression $-5.261+0.005X_i$, where $X_i$ represents Income, our independent variable. A [statistical model]{.mybold}, like this one, is a mathematical expression, usually very simple, that generates guesses about what the data are. We say that the model makes [predictions]{.mybold} about the data. You can think of it a little prediction machine. And we can give it information to base its predictions on. In this case, for instance, we used Income, $X_i$, as an information for the model to use in generating predictions.
+The **Model** is given by the expression $-5.261+0.005X_i$, where $X_i$ represents Income, our independent variable. A [statistical model]{.mybold}, like this one, is a mathematical expression, usually very simple, that generates guesses about what the data are. We say that the model makes [predictions]{.mybold} about the data. You can think of it as a little prediction machine. And we can give it information to base its predictions on. In this case, for instance, we used Income, $X_i$, as an information for the model to use in generating predictions.
 
 ::: definition
 *A* [statistical model]{.mybold} *is a simple mathematical expression that generates guesses (predictions) about what each data point is.*

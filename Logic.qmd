@@ -2,21 +2,17 @@
 bibliography: references.bib
 ---
 
-# Elements of logic
+# An introduction to inductive logic
 
-As researchers, we would like to contribute in generating new knowledge about reality. As social scientists, in particular, we might put forth explanations of why humans feel, think, and behave in certain ways in certain situations. 
+In the previous chapter, we outlined a general strategy to approach the highly complicated objects that social scientists typically aim to study. Starting from a broad question about a theoretical variable (*How does well-being work?*), we ended up with the task of building statistical models designed to explain a set of data which represent our variable of interest. Our hope is that, thanks to its simplicity, our model will help us learn something about the complicated processes that underlie our phenomenon of interest. 
 
+But there is a problem with this strategy. When we ask a question like *What are the determinants of human well-being?*, the answers we are seeking are general ones. Thus, when we formulate a hypothesis as one tentative answer that we would like to test, we will typically give the form of a general statement (*e.g., Income increases well-being*). On the other hand, when we get to the part where we build a statistical model, we are now dealing with a particular set of data obtained in the context of a particular study. Our problem, then, is the following: can we learn something about a general statement based on observations made in a particular set of data?
 
-
-As researchers, we would like to make statements about the world that are true. But distinguishing true statements from false ones is far from self-evident. Hence, we should think of a statement as true only if we have *reasons* to do so. In logic, such reasons are called [arguments]{.mybold}.
-
-Not all arguments are of the same nature. Consider the following examples:
-
-Some notions of logic are useful
+In this chapter, we will define this problem from a logical perspective. Assuming that, as researchers, we strive to make statements about the world that are true, it is important to acknowledge that distinguishing true statements from false ones is far from self-evident. Thus, we should think of a statement as true only if we have reasons to do so. Such reasons, together with the conclusion they are meant to support form what logicians call an [argument]{.mybold}. 
 
 ## Arguments
 
-Arguments are made up of basic statements called [propositions]{.mybold}.
+Arguments are made up of basic statements called [propositions]{.mybold}. Propositions are the building blocks of arguments. An important feature of propositions is that they are either true or false. This means that questions or orders are not propositions because they cannot be said to be true or false.
 
 ::: definition
 [Propositions]{.mybold} *are basic statements that are either true or false.*
@@ -24,13 +20,28 @@ Arguments are made up of basic statements called [propositions]{.mybold}.
 
 Two types of propositions form an argument: the [premises]{.mybold} and the [conclusion]{.mybold}.
 
-::: definition
-The [premises]{.mybold} *are the reasons invoked to justify the conclusion.*
+The premises are the propositions forming the basis on which the argument rests. The are the starting point of the argument. The conclusion, on the other hand, is the end point of the argument. It is the proposition which, according to the argument, is justified by the premises.
 
-The [conclusion]{.mybold} *is the proposition inferred based on the premises.*
+::: definition
+*The* [premises]{.mybold} *are the propositions invoked to justify the conclusion.*
+
+*The* [conclusion]{.mybold} *is the proposition inferred based on the premises.*
 :::
 
-The [premises]{.mybold} are propositions forming the basis on which the argument rests. The conclusion is the proposition
+Thus, if I say:
+
+> I am always in a bad mood before I drink a coffee, which I haven't yet. So, I am in a bad mood.
+
+I can re-write my argument as follows:
+
+> Argument (1)
+>
+> **Premise 1**: I am always in a bad mood before I drink coffee.
+>
+> **Premise 2**: I didn't drink a coffee yet.
+>
+> **Conclusion**: I am in a bad mood.
+
 
 > **(P1)**: *This orange is good.*
 >
