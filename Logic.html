@@ -193,13 +193,17 @@ window.Quarto = {
    
   <ul>
   <li><a href="#arguments" id="toc-arguments" class="nav-link active" data-scroll-target="#arguments"><span class="header-section-number">2.1</span> Arguments</a></li>
-  <li><a href="#deductive-logic" id="toc-deductive-logic" class="nav-link" data-scroll-target="#deductive-logic"><span class="header-section-number">2.2</span> Deductive logic</a>
+  <li><a href="#deductive-arguments" id="toc-deductive-arguments" class="nav-link" data-scroll-target="#deductive-arguments"><span class="header-section-number">2.2</span> Deductive arguments</a>
   <ul class="collapse">
   <li><a href="#validity" id="toc-validity" class="nav-link" data-scroll-target="#validity"><span class="header-section-number">2.2.1</span> Validity</a></li>
   <li><a href="#soundness" id="toc-soundness" class="nav-link" data-scroll-target="#soundness"><span class="header-section-number">2.2.2</span> Soundness</a></li>
+  <li><a href="#why-deductive-arguments-only-get-us-far" id="toc-why-deductive-arguments-only-get-us-far" class="nav-link" data-scroll-target="#why-deductive-arguments-only-get-us-far"><span class="header-section-number">2.2.3</span> Why deductive arguments only get us far</a></li>
   </ul></li>
-  <li><a href="#inductive-logic" id="toc-inductive-logic" class="nav-link" data-scroll-target="#inductive-logic"><span class="header-section-number">2.3</span> Inductive logic</a></li>
-  <li><a href="#elements-of-set-theory" id="toc-elements-of-set-theory" class="nav-link" data-scroll-target="#elements-of-set-theory"><span class="header-section-number">2.4</span> Elements of set theory</a></li>
+  <li><a href="#some-tools-from-set-theory" id="toc-some-tools-from-set-theory" class="nav-link" data-scroll-target="#some-tools-from-set-theory"><span class="header-section-number">2.3</span> Some tools from set theory</a></li>
+  <li><a href="#inductive-logic" id="toc-inductive-logic" class="nav-link" data-scroll-target="#inductive-logic"><span class="header-section-number">2.4</span> Inductive logic</a>
+  <ul class="collapse">
+  <li><a href="#two-problems-with-inductive-arguments" id="toc-two-problems-with-inductive-arguments" class="nav-link" data-scroll-target="#two-problems-with-inductive-arguments"><span class="header-section-number">2.4.1</span> Two problems with inductive arguments</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -225,22 +229,52 @@ window.Quarto = {
 </header>
 
 
-<p>In the previous chapter, we outlined a general strategy to approach the highly complicated objects that social scientists typically aim to study. Starting from a broad question about a theoretical variable (<em>How does well-being work?</em>), we ended up with the task of building statistical models designed to explain a set of data which represent our variable of interest. Our hope is that, thanks to its simplicity, our model will help us learn something about the complicated processes that underlie our phenomenon of interest.</p>
-<p>But there is a problem with this strategy. When we ask a question like <em>What are the determinants of human well-being?</em>, the answers we are seeking are general ones. Thus, when we formulate a hypothesis as one tentative answer that we would like to test, we will typically give the form of a general statement (<em>e.g., Income increases well-being</em>). On the other hand, when we get to the part where we build a statistical model, we are now dealing with a particular set of data obtained in the context of a particular study. Our problem, then, is the following: can we learn something about a general statement based on observations made in a particular set of data?</p>
-<p>In this chapter, we will define this problem from a logical perspective. Assuming that, as researchers, we strive to make statements about the world that are true, it is important to acknowledge that distinguishing true statements from false ones is far from self-evident. Thus, we should think of a statement as true only if we have reasons to do so. Such reasons, together with the conclusion they are meant to support form what logicians call an <span class="mybold">argument</span>.</p>
+<p>In the previous chapter, we outlined a strategy to approach the complicated objects that social scientists typically aim to study. From a broad question about a theoretical variable (<em>What are the determinants of human well-being?</em>) and the formulation of hypotheses, our discussion led us to the task of building a statistical model designed to explain a set of data representing our variable of interest. Our hope is that our model, thanks to its simplicity, will help us learn something about the complicated processes that underlie our phenomenon of interest.</p>
+<p>Unfortunately, there is an important difficulty that sneaked in along the way. To see it, imagine that a researcher wants to test the following hypothesis: <em>The more human individuals have friends, the higher their well-being.</em> He conducts a study among 200 individuals, measuring their well-being and how many friends they have. After some well-crafted statistical modelling he observes that, indeed, the number of friends of participants is an important explanation of his data. He interprets this result as follows:</p>
+<blockquote class="blockquote">
+<p>Argument (1)</p>
+<p><strong>Statement 1</strong>: The more my <strong>participants</strong> had friends, the higher their well-being.</p>
+<p><strong>Statement 2</strong>: Therefore, the more <strong>human</strong> individuals have friends, the higher their well-being.</p>
+</blockquote>
+<p>What our imaginary researcher did, was to present what he learned from his model (Statement 1) as a reason to accept his hypothesis (Statement 2). He made what logicians call an <span class="mybold">argument</span>: a set of reasons presented in support of a conclusion. But this argument has a peculiar feature that makes it problematic to accept: Statement 1 applies to 200 participants (a relatively small set of people), whereas Statement 2 applies to humans in general (a larger set of people). We call this an <span class="mybold">inductive argument</span>. And here is our problem: can we really say that Statement 1 justifies Statement 2?</p>
+<p>The problem with this specific argument is in fact ubiquitous in empirical research (<em>i.e.</em>, research based on observations). On the one hand, our questions and hypotheses typically claim a very broad relevance. As social scientists, we want to explain how social phenomena work for all humans or, at the very least, for a large set of humans, such as all the residents of a particular country. This large set, about which we want to learn something, is what we call a <span class="mybold">population</span>. On the other hand, when we get to the part where we build a statistical model, we very rarely have access to the entire population. Instead, we are typically dealing with a smaller set of data drawn from the population in the context of a particular study. This smaller set of observations drawn from the population is called a <span class="mybold">sample</span>. Our problem, then, can be expressed through the following question: <strong>can observations made in a sample justify drawing a conclusion about a population?</strong></p>
+<p>In this chapter, we will define this problem from the perspective of logic. We will see why the kind of arguments that can be trusted the most - <span class="mybold">deductive arguments</span> - cannot be exclusively relied upon. To build knowledge about the world, we need to use inductive arguments as well. We will then discuss the risks of accepting inductive arguments and how to tame such risks. Along the way, we will also encounter some tools from set theory that will help us in the next chapter.</p>
 <section id="arguments" class="level2" data-number="2.1">
 <h2 data-number="2.1" class="anchored" data-anchor-id="arguments"><span class="header-section-number">2.1</span> Arguments</h2>
-<p>Arguments are made up of basic statements called <span class="mybold">propositions</span>. Propositions are the building blocks of arguments. An important feature of propositions is that they are either true or false. This means that questions or orders are not propositions because they cannot be said to be true or false.</p>
+<p>Let us assume that, as researchers, we strive to make statements about the world that are true. This probably sounds trivial (if it doesn’t, you might want to take a look at <a href="#fig-Dig2.1h">Digression 2.1</a>). But it is important to acknowledge that this aim is often difficult to achieve because distinguishing true statements from false ones is rarely, if ever, self-evident. Thus, we should think of a statement as true only if we have reasons to do so. Such reasons, together with the conclusion they are meant to support form what logicians call an <span class="mybold">argument</span>.</p>
+<div id="fig-Dig2.1h" class="digression quarto-float quarto-figure quarto-figure-center anchored" style="--c:'Digression 2.1 – Philosophy';">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-Dig2.1h-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div style="text-align:center;">
+<p><strong>What do you mean “true”?</strong></p>
+</div>
+<div style="text-align:justify; font-color: black;">
+<p>If the phrase “we should strive to make statements about the world that are <strong>true</strong>” sounds strange or naïve to you, you might have picked up the habit – from your readings or classes – of saying that there is no such thing as “objective truth”, that truth is ‘relative’, ‘socially constructed’, etc. If that’s the case, I wouldn’t blame you. This kind of claim is surprisingly common within certain circles of social scientists <span class="citation" data-cites="lynch2004 sidky2020">(<a href="references.html#ref-lynch2004" role="doc-biblioref">Lynch, 2004</a>; <a href="references.html#ref-sidky2020" role="doc-biblioref">Sidky, 2020</a>)</span>. So, I think it is worth taking a moment to clarify what we should make of them.</p>
+<p>Let’s first clarify in what sense I use the term “true”: <strong>A proposition is true only if it corresponds to a fact in reality</strong> <span class="citation" data-cites="chalmers1999 searle1995 rasmussen2014">(<em>e.g.</em>, <a href="references.html#ref-chalmers1999" role="doc-biblioref">Chalmers, 1999</a>; <a href="references.html#ref-rasmussen2014" role="doc-biblioref">Rasmussen, 2014</a>; <a href="references.html#ref-searle1995" role="doc-biblioref">Searle, 1995</a>)</span>. For instance, the sentence “there is a box of chocolate in my fridge”, is a true proposition only if there indeed is a box of chocolate in my fridge. Thus, “truth” is a characteristic of certain propositions <span class="citation" data-cites="burgess2011">(for alternative definitions of truth, see <a href="references.html#ref-burgess2011" role="doc-biblioref">Burgess &amp; Burgess, 2011</a>)</span>.</p>
+<p>Notice how, defined this way, truth is objective: it has nothing to do with what I think – or indeed with what anyone thinks. I might have forgotten that there is a box of chocolate in my fridge, and thus mistakenly believe that the proposition “there is a box of chocolate in my fridge” is false. But my belief is irrelevant, it does not change the fact that the proposition is true. If I were to open the fridge and see that there is a box in there, <strong>my belief about the truth of the proposition</strong> would change but the proposition would not ‘become’ true: it would have been true all along.</p>
+<p>If all this sounds obvious to you, that’s good. Because claims about the ‘socially constructed’ or ‘relative’ nature of truth are usually grounded in a misunderstanding of this simple point. That is, such claims ultimately rest on a conflation of two kinds of statements: those of the form “x is true” and those of the form “y believes x to be true” or “x passes for true among y” (the philosopher Susan Haack <span class="citation" data-cites="haack1999">(<a href="references.html#ref-haack1999" role="doc-biblioref">1999, Chapters 5, 8</a>)</span> calls this the “passes for” fallacy). A typical example can be found in the work of Michel Foucault, where this conflation is cultivated through ambiguous language. Consider for instance this often quoted passage <span class="citation" data-cites="foucault2001">(<a href="references.html#ref-foucault2001" role="doc-biblioref">Foucault, 2001, p. 131</a>)</span>:</p>
+<blockquote class="blockquote">
+<p><em>Truth is a thing of this world: it is produced only by virtue of multiple forms of constraint. And it induces regular effects of power. Each society has its regime of truth, its “general politics” of truth — that is, the types of discourse it accepts and makes function as true; the mechanisms and instances that enable one to distinguish true and false statements; the means by which each is sanctioned; the techniques and procedures accorded value in the acquisition of truth; the status of those who are charged with saying what counts as true.</em></p>
+</blockquote>
+<p>If we keep in mind the difference between “truth” and “what passes for truth”, then the first sentence appears to make a radical claim: truth is “<strong>produced</strong>” (or, one might say, socially constructed). But when describing how this happens, the statement becomes ambiguous as to what exactly is produced. What does it mean that a society has “<em>types of discourse it accepts and makes function as true</em>”? Or that it has “<em>mechanisms and instances that enable one to distinguish true and false statements</em>”? Is the claim that (1) societies have institutions that influence <strong>what</strong> <strong>passes for true</strong> in that society? Or is it that (2) those societal institutions truly determine <strong>what is actually true</strong> in that society? If the claim is (1), then it is a convoluted way of saying something wholly unremarkable. If the claim is (2), then it is obviously mistaken. The fact that, at the time of Galileo, the inquisition forbid any challenge to biblical geocentrism – the idea that the earth is immobile at the center of the universe – didn’t make geocentrism true. The earth didn’t wait for the permission of the inquisition to start orbiting around the sun. In sum, the claim that truth is somehow ‘constructed’ sounds plausible and profound only as long as “truth” and “what passes for truth” are used interchangeably. When the ambiguity is removed, the illusion of profundity dissolves. Try it yourself next time you encounter a similar claim.</p>
+<p>In any case, this book assumes that empirical inquiry – and indeed any kind of inquiry – would be utterly futile without the notion of objective truth <span class="citation" data-cites="haack1999">(<em>e.g.</em>, <a href="references.html#ref-haack1999" role="doc-biblioref">Haack, 1999, Chapter 1</a>)</span>. After all, what could we possibly learn from observing the world if nothing can be said to be objectively true?</p>
+</div>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-Dig2.1h-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2.1
+</figcaption>
+</figure>
+</div>
+<p>Arguments are made up of basic statements called <span class="mybold">propositions</span>. We might say that propositions are the building blocks of arguments. An important feature of propositions is that they are either true or false. Thus, if I say “you are sitting on a chair”, I am uttering a proposition because my utterance is true or false depending on whether you are actually sitting on a chair. But if I say “are you sitting on a chair?” or “sit on a chair!”, I am not uttering a proposition, because questions and orders cannot be said to be true or false.</p>
 <div class="definition">
 <p><span class="mybold">Propositions</span> <em>are basic statements that are either true or false.</em></p>
 </div>
-<p>Two types of propositions form an argument: the <span class="mybold">premises</span> and the <span class="mybold">conclusion</span>.</p>
-<p>The premises are the propositions forming the basis on which the argument rests. The are the starting point of the argument. The conclusion, on the other hand, is the end point of the argument. It is the proposition which, according to the argument, is justified by the premises.</p>
+<p>Two types of propositions form an argument: the <span class="mybold">premises</span> and the <span class="mybold">conclusion</span>. The premises are the propositions forming the basis on which the argument rests. The are the starting point of the argument. The conclusion, on the other hand, is the end point of the argument. It is the proposition which, according to the argument, is justified by the premises.</p>
 <div class="definition">
 <p><em>The</em> <span class="mybold">premises</span> <em>are the propositions invoked to justify the conclusion.</em></p>
 <p><em>The</em> <span class="mybold">conclusion</span> <em>is the proposition inferred based on the premises.</em></p>
 </div>
-<p>Thus, if I say:</p>
+<p>In everyday talk and writing, arguments rarely include clear labels identifying which parts constitute their premises and which part constitutes their conclusion. But they always have at least one premise and a conclusion. So, they can always be re-stated to make their structure more transparent. For instance,</p>
 <blockquote class="blockquote">
 <p>I am always in a bad mood before I drink a coffee, which I haven’t yet. So, I am in a bad mood.</p>
 </blockquote>
@@ -251,19 +285,15 @@ window.Quarto = {
 <p><strong>Premise 2</strong>: I didn’t drink a coffee yet.</p>
 <p><strong>Conclusion</strong>: I am in a bad mood.</p>
 </blockquote>
-<blockquote class="blockquote">
-<p><strong>(P1)</strong>: <em>This orange is good.</em></p>
-<p><strong>Therefore</strong>: <em>All oranges in the box are good.</em></p>
-</blockquote>
 </section>
-<section id="deductive-logic" class="level2" data-number="2.2">
-<h2 data-number="2.2" class="anchored" data-anchor-id="deductive-logic"><span class="header-section-number">2.2</span> Deductive logic</h2>
-<p>Deductive logic is concerned with identifying the form of arguments whereby the conclusion can be safely derived from the premises.</p>
+<section id="deductive-arguments" class="level2" data-number="2.2">
+<h2 data-number="2.2" class="anchored" data-anchor-id="deductive-arguments"><span class="header-section-number">2.2</span> Deductive arguments</h2>
+<p>Not all arguments are of the same kind. Some can be trusted more than others. Deductive logic is concerned with identifying the kind of arguments that can be trusted the most, in the sense that they ensure a perfectly safe passage from premises to conclusion. Using the words of Ian Hacking <span class="citation" data-cites="hacking2001">(<a href="references.html#ref-hacking2001" role="doc-biblioref">2001</a>)</span>, we can say that deductive logic tries to identify “risk-free arguments”.</p>
 <section id="validity" class="level3" data-number="2.2.1">
 <h3 data-number="2.2.1" class="anchored" data-anchor-id="validity"><span class="header-section-number">2.2.1</span> Validity</h3>
-<p>Consider Argument (1), for instance:</p>
+<p>But what does it mean for an argument to be “risk-free”? Consider Argument (2), for instance:</p>
 <blockquote class="blockquote">
-<p>Argument (1)</p>
+<p>Argument (2)</p>
 <p><strong>Premise 1</strong>: The cat is either dead or alive.</p>
 <p><strong>Premise 2</strong>: The cat is not dead.</p>
 <p><strong>Conclusion</strong>: The cat is alive.</p>
@@ -272,20 +302,25 @@ window.Quarto = {
 <div class="definition">
 <p>A deductive argument is <span class="mybold">valid</span> if and only if the truth of all the premises <em>necessarily</em> implies the truth of the conclusion. Otherwise, it is <span class="mybold">invalid</span>.</p>
 </div>
-<p>Ian Hacking <span class="citation" data-cites="hacking2001">(<a href="references.html#ref-hacking2001" role="doc-biblioref">2001</a>)</span> usefully calls valid arguments “risk-free arguments”.</p>
-<p>Some arguments may appear intuitively compelling to us, while they are not, in fact, valid. We say that they <span class="mybold">invalid</span>. Consider the following:</p>
+<p>The notion of validity is important because some arguments may pose as risk-free, while they actually are not. They may appear intuitively compelling to us, while they are not, in fact, valid. We say that they are <span class="mybold">invalid</span>. Consider the following:</p>
 <blockquote class="blockquote">
 <p>Argument (2)</p>
 <p><strong>Premise 1</strong>: If Trillian is hungry, then she starts eating.</p>
 <p><strong>Premise 2</strong>: Trillian starts eating.</p>
 <p><strong>Conclusion</strong>: Trillian is hungry.</p>
 </blockquote>
-<p>Even if the conclusion could happen to be true, it does not necessarily follow from the premises. Premise 1 does not rule out that Trillian could start eating even if not hungry. Thus, the fact that Trillian starts eating (Premise 2) does not necessarily imply that she is hungry. Trillian might simply be bored or trying to please a host who invited her for dinner, for instance.</p>
-<p>Argument (2) commits a fallacy, i.e., an error in reasoning. This particular fallacy is called “affirming the consequent”.</p>
+<p>Even if the conclusion could happen to be true, it does not necessarily follow from the premises. Premise 1 does not rule out that Trillian could start eating even if not hungry. Thus, the fact that Trillian starts eating (Premise 2) does not necessarily imply that she is hungry. Trillian might simply be bored or trying to please a host who invited her for dinner, for instance. Argument (2) commits a fallacy, i.e., an error in reasoning. This particular fallacy is called “affirming the consequent”.</p>
 </section>
 <section id="soundness" class="level3" data-number="2.2.2">
 <h3 data-number="2.2.2" class="anchored" data-anchor-id="soundness"><span class="header-section-number">2.2.2</span> Soundness</h3>
-<p>We have seen that a valid argument ensures that the conclusion is true if the premises are all true. But note that there is an important “if” there: <strong>if all the premises are true</strong>. In other words, an argument can be valid while its premises are false.</p>
+<p>We have seen that a valid argument ensures that the conclusion is true if the premises are all true. But note that there is an important “if” there: <strong>if all the premises are true</strong>.</p>
+<p>In other words, an argument can be valid while its premises are false.</p>
+<blockquote class="blockquote">
+<p><em>Argument (3)</em></p>
+<p><strong>Premise 1</strong>: All scientists love statistics</p>
+<p><strong>Premise 2</strong>: All social scientists are scientists</p>
+<p><strong>Conclusion</strong>: All social scientists love statistics</p>
+</blockquote>
 <div class="cell">
 <div id="tbl-arg" class="cell quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
@@ -294,24 +329,26 @@ Table&nbsp;2.1: Determining the soundness of deductive arguments
 </figcaption>
 <div aria-describedby="tbl-arg-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell-output-display">
-<div class="tabwid"><style>.cl-07d1ab40{}.cl-07ce4a72{font-family:'Helvetica';font-size:11pt;font-weight:bold;font-style:normal;text-decoration:none;color:rgba(0, 0, 0, 1.00);background-color:transparent;}.cl-07ce4a7c{font-family:'Helvetica';font-size:11pt;font-weight:normal;font-style:normal;text-decoration:none;color:rgba(0, 0, 0, 1.00);background-color:transparent;}.cl-07cfad68{margin:0;text-align:center;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:5pt;padding-top:5pt;padding-left:5pt;padding-right:5pt;line-height: 1;background-color:transparent;}.cl-07cfad72{margin:0;text-align:center;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:5pt;padding-top:5pt;padding-left:5pt;padding-right:5pt;line-height: 2.7;background-color:transparent;}.cl-07cfb812{width:0.9in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-07cfb81c{width:1.297in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-07cfb81d{width:0.9in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-07cfb81e{width:1.297in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-07cfb81f{width:0.9in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-07cfb830{width:1.297in;background-color:transparent;vertical-align: middle;border-bottom: 1pt solid rgba(0, 0, 0, 1.00);border-top: 1pt solid rgba(0, 0, 0, 1.00);border-left: 1pt solid rgba(0, 0, 0, 1.00);border-right: 1pt solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}</style><table data-quarto-disable-processing="true" class="cl-07d1ab40"><thead><tr style="overflow-wrap:break-word;"><th class="cl-07cfb812"><p class="cl-07cfad68"><span class="cl-07ce4a72"></span></p></th><th class="cl-07cfb812"><p class="cl-07cfad68"><span class="cl-07ce4a72"></span></p></th><th colspan="2" class="cl-07cfb81c"><p class="cl-07cfad68"><span class="cl-07ce4a72">Reasoning</span></p></th></tr><tr style="overflow-wrap:break-word;"><th class="cl-07cfb81d"><p class="cl-07cfad68"><span class="cl-07ce4a7c">  </span></p></th><th class="cl-07cfb81d"><p class="cl-07cfad68"><span class="cl-07ce4a7c"> </span></p></th><th class="cl-07cfb81e"><p class="cl-07cfad68"><span class="cl-07ce4a7c">Valid</span></p></th><th class="cl-07cfb81e"><p class="cl-07cfad68"><span class="cl-07ce4a7c">Invalid</span></p></th></tr></thead><tbody><tr style="overflow-wrap:break-word;"><td rowspan="2" class="cl-07cfb81f"><p class="cl-07cfad72"><span class="cl-07ce4a72">Premises</span></p></td><td class="cl-07cfb81f"><p class="cl-07cfad72"><span class="cl-07ce4a7c">All true</span></p></td><td class="cl-07cfb830"><p class="cl-07cfad72"><span class="cl-07ce4a7c">Sound</span></p></td><td class="cl-07cfb830"><p class="cl-07cfad72"><span class="cl-07ce4a7c">Unsound</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-07cfb81f"><p class="cl-07cfad72"><span class="cl-07ce4a7c">Not all true</span></p></td><td class="cl-07cfb830"><p class="cl-07cfad72"><span class="cl-07ce4a7c">Unsound</span></p></td><td class="cl-07cfb830"><p class="cl-07cfad72"><span class="cl-07ce4a7c">Unsound</span></p></td></tr></tbody></table></div>
+<div class="tabwid"><style>.cl-f91bc676{}.cl-f9184db6{font-family:'Helvetica';font-size:11pt;font-weight:bold;font-style:normal;text-decoration:none;color:rgba(0, 0, 0, 1.00);background-color:transparent;}.cl-f9184dc0{font-family:'Helvetica';font-size:11pt;font-weight:normal;font-style:normal;text-decoration:none;color:rgba(0, 0, 0, 1.00);background-color:transparent;}.cl-f919b5ac{margin:0;text-align:center;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:5pt;padding-top:5pt;padding-left:5pt;padding-right:5pt;line-height: 1;background-color:transparent;}.cl-f919b5ad{margin:0;text-align:center;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:5pt;padding-top:5pt;padding-left:5pt;padding-right:5pt;line-height: 2.7;background-color:transparent;}.cl-f919c0b0{width:0.9in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-f919c0b1{width:1.297in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-f919c0b2{width:0.9in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-f919c0ba{width:1.297in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-f919c0bb{width:0.9in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-f919c0bc{width:1.297in;background-color:transparent;vertical-align: middle;border-bottom: 1pt solid rgba(0, 0, 0, 1.00);border-top: 1pt solid rgba(0, 0, 0, 1.00);border-left: 1pt solid rgba(0, 0, 0, 1.00);border-right: 1pt solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}</style><table data-quarto-disable-processing="true" class="cl-f91bc676"><thead><tr style="overflow-wrap:break-word;"><th class="cl-f919c0b0"><p class="cl-f919b5ac"><span class="cl-f9184db6"></span></p></th><th class="cl-f919c0b0"><p class="cl-f919b5ac"><span class="cl-f9184db6"></span></p></th><th colspan="2" class="cl-f919c0b1"><p class="cl-f919b5ac"><span class="cl-f9184db6">Reasoning</span></p></th></tr><tr style="overflow-wrap:break-word;"><th class="cl-f919c0b2"><p class="cl-f919b5ac"><span class="cl-f9184dc0">  </span></p></th><th class="cl-f919c0b2"><p class="cl-f919b5ac"><span class="cl-f9184dc0"> </span></p></th><th class="cl-f919c0ba"><p class="cl-f919b5ac"><span class="cl-f9184dc0">Valid</span></p></th><th class="cl-f919c0ba"><p class="cl-f919b5ac"><span class="cl-f9184dc0">Invalid</span></p></th></tr></thead><tbody><tr style="overflow-wrap:break-word;"><td rowspan="2" class="cl-f919c0bb"><p class="cl-f919b5ad"><span class="cl-f9184db6">Premises</span></p></td><td class="cl-f919c0bb"><p class="cl-f919b5ad"><span class="cl-f9184dc0">All true</span></p></td><td class="cl-f919c0bc"><p class="cl-f919b5ad"><span class="cl-f9184dc0">Sound</span></p></td><td class="cl-f919c0bc"><p class="cl-f919b5ad"><span class="cl-f9184dc0">Unsound</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-f919c0bb"><p class="cl-f919b5ad"><span class="cl-f9184dc0">Not all true</span></p></td><td class="cl-f919c0bc"><p class="cl-f919b5ad"><span class="cl-f9184dc0">Unsound</span></p></td><td class="cl-f919c0bc"><p class="cl-f919b5ad"><span class="cl-f9184dc0">Unsound</span></p></td></tr></tbody></table></div>
 </div>
 </div>
 </figure>
 </div>
 </div>
 </section>
+<section id="why-deductive-arguments-only-get-us-far" class="level3" data-number="2.2.3">
+<h3 data-number="2.2.3" class="anchored" data-anchor-id="why-deductive-arguments-only-get-us-far"><span class="header-section-number">2.2.3</span> Why deductive arguments only get us far</h3>
 </section>
-<section id="inductive-logic" class="level2" data-number="2.3">
-<h2 data-number="2.3" class="anchored" data-anchor-id="inductive-logic"><span class="header-section-number">2.3</span> Inductive logic</h2>
 </section>
-<section id="elements-of-set-theory" class="level2" data-number="2.4">
-<h2 data-number="2.4" class="anchored" data-anchor-id="elements-of-set-theory"><span class="header-section-number">2.4</span> Elements of set theory</h2>
-<p>Arguments using quantifiers like “all”, “some”, or “none” can usefully be represented through relations between sets.</p>
+<section id="some-tools-from-set-theory" class="level2" data-number="2.3">
+<h2 data-number="2.3" class="anchored" data-anchor-id="some-tools-from-set-theory"><span class="header-section-number">2.3</span> Some tools from set theory</h2>
+<p>Set theory is a branch of mathematics that directly builds on logic. While it not necessary for us to study it in any details, it provides tools that are useful for certain logical problems which will play an important role in the next chapter.</p>
+<p>For our purpose, we can simply say that a set is a collection of objects considered as one object. And the objects which are part of the set are call its members or elements.</p>
+<p>How is that useful? Well, first of all, thinking in terms of sets makes some arguments much easier to evaluate. This is the case for arguments that use quantifiers like “all”, “some”, or “none”, because they can be represented through relations between sets.</p>
 <div>
 
 </div>
-<div class="quarto-layout-panel" data-layout="[60,40]" data-fig-align="center">
+<div class="quarto-layout-panel" data-fig-align="center" data-layout="[60,40]">
 <div class="quarto-layout-row quarto-layout-valign-center">
 <div class="quarto-layout-cell" style="flex-basis: 60.0%;justify-content: flex-start;">
 <blockquote class="blockquote">
@@ -329,7 +366,7 @@ Table&nbsp;2.1: Determining the soundness of deductive arguments
 <img src="Logic_files/figure-html/fig-set1-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-set1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;2.1: Set representation of Argument (3)
+Figure&nbsp;2.2: Set representation of Argument (3)
 </figcaption>
 </figure>
 </div>
@@ -345,7 +382,7 @@ Figure&nbsp;2.1: Set representation of Argument (3)
 <img src="Logic_files/figure-html/fig-set-1.png" class="img-fluid figure-img" width="2310">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-set-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;2.2: An example of sets
+Figure&nbsp;2.3: An example of sets
 </figcaption>
 </figure>
 </div>
@@ -353,23 +390,23 @@ Figure&nbsp;2.2: An example of sets
 </div>
 <div class="cell">
 <div class="cell-output-display">
-<div id="jessqhlifz" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#jessqhlifz table {
+<div id="lwwledoodj" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#lwwledoodj table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#jessqhlifz thead, #jessqhlifz tbody, #jessqhlifz tfoot, #jessqhlifz tr, #jessqhlifz td, #jessqhlifz th {
+#lwwledoodj thead, #lwwledoodj tbody, #lwwledoodj tfoot, #lwwledoodj tr, #lwwledoodj td, #lwwledoodj th {
   border-style: none;
 }
 
-#jessqhlifz p {
+#lwwledoodj p {
   margin: 0;
   padding: 0;
 }
 
-#jessqhlifz .gt_table {
+#lwwledoodj .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -395,12 +432,12 @@ Figure&nbsp;2.2: An example of sets
   border-left-color: #D3D3D3;
 }
 
-#jessqhlifz .gt_caption {
+#lwwledoodj .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#jessqhlifz .gt_title {
+#lwwledoodj .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -412,7 +449,7 @@ Figure&nbsp;2.2: An example of sets
   border-bottom-width: 0;
 }
 
-#jessqhlifz .gt_subtitle {
+#lwwledoodj .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -424,7 +461,7 @@ Figure&nbsp;2.2: An example of sets
   border-top-width: 0;
 }
 
-#jessqhlifz .gt_heading {
+#lwwledoodj .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -436,13 +473,13 @@ Figure&nbsp;2.2: An example of sets
   border-right-color: #D3D3D3;
 }
 
-#jessqhlifz .gt_bottom_border {
+#lwwledoodj .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#jessqhlifz .gt_col_headings {
+#lwwledoodj .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -457,7 +494,7 @@ Figure&nbsp;2.2: An example of sets
   border-right-color: #D3D3D3;
 }
 
-#jessqhlifz .gt_col_heading {
+#lwwledoodj .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -477,7 +514,7 @@ Figure&nbsp;2.2: An example of sets
   overflow-x: hidden;
 }
 
-#jessqhlifz .gt_column_spanner_outer {
+#lwwledoodj .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -489,15 +526,15 @@ Figure&nbsp;2.2: An example of sets
   padding-right: 4px;
 }
 
-#jessqhlifz .gt_column_spanner_outer:first-child {
+#lwwledoodj .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#jessqhlifz .gt_column_spanner_outer:last-child {
+#lwwledoodj .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#jessqhlifz .gt_column_spanner {
+#lwwledoodj .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -509,11 +546,11 @@ Figure&nbsp;2.2: An example of sets
   width: 100%;
 }
 
-#jessqhlifz .gt_spanner_row {
+#lwwledoodj .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#jessqhlifz .gt_group_heading {
+#lwwledoodj .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -539,7 +576,7 @@ Figure&nbsp;2.2: An example of sets
   text-align: left;
 }
 
-#jessqhlifz .gt_empty_group_heading {
+#lwwledoodj .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -554,15 +591,15 @@ Figure&nbsp;2.2: An example of sets
   vertical-align: middle;
 }
 
-#jessqhlifz .gt_from_md > :first-child {
+#lwwledoodj .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#jessqhlifz .gt_from_md > :last-child {
+#lwwledoodj .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#jessqhlifz .gt_row {
+#lwwledoodj .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -581,7 +618,7 @@ Figure&nbsp;2.2: An example of sets
   overflow-x: hidden;
 }
 
-#jessqhlifz .gt_stub {
+#lwwledoodj .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -594,7 +631,7 @@ Figure&nbsp;2.2: An example of sets
   padding-right: 5px;
 }
 
-#jessqhlifz .gt_stub_row_group {
+#lwwledoodj .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -608,15 +645,15 @@ Figure&nbsp;2.2: An example of sets
   vertical-align: top;
 }
 
-#jessqhlifz .gt_row_group_first td {
+#lwwledoodj .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#jessqhlifz .gt_row_group_first th {
+#lwwledoodj .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#jessqhlifz .gt_summary_row {
+#lwwledoodj .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -626,16 +663,16 @@ Figure&nbsp;2.2: An example of sets
   padding-right: 5px;
 }
 
-#jessqhlifz .gt_first_summary_row {
+#lwwledoodj .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#jessqhlifz .gt_first_summary_row.thick {
+#lwwledoodj .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#jessqhlifz .gt_last_summary_row {
+#lwwledoodj .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -645,7 +682,7 @@ Figure&nbsp;2.2: An example of sets
   border-bottom-color: #D3D3D3;
 }
 
-#jessqhlifz .gt_grand_summary_row {
+#lwwledoodj .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -655,7 +692,7 @@ Figure&nbsp;2.2: An example of sets
   padding-right: 5px;
 }
 
-#jessqhlifz .gt_first_grand_summary_row {
+#lwwledoodj .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -665,7 +702,7 @@ Figure&nbsp;2.2: An example of sets
   border-top-color: #D3D3D3;
 }
 
-#jessqhlifz .gt_last_grand_summary_row_top {
+#lwwledoodj .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -675,11 +712,11 @@ Figure&nbsp;2.2: An example of sets
   border-bottom-color: #D3D3D3;
 }
 
-#jessqhlifz .gt_striped {
+#lwwledoodj .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#jessqhlifz .gt_table_body {
+#lwwledoodj .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -688,7 +725,7 @@ Figure&nbsp;2.2: An example of sets
   border-bottom-color: #D3D3D3;
 }
 
-#jessqhlifz .gt_footnotes {
+#lwwledoodj .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -702,7 +739,7 @@ Figure&nbsp;2.2: An example of sets
   border-right-color: #D3D3D3;
 }
 
-#jessqhlifz .gt_footnote {
+#lwwledoodj .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -711,7 +748,7 @@ Figure&nbsp;2.2: An example of sets
   padding-right: 5px;
 }
 
-#jessqhlifz .gt_sourcenotes {
+#lwwledoodj .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -725,7 +762,7 @@ Figure&nbsp;2.2: An example of sets
   border-right-color: #D3D3D3;
 }
 
-#jessqhlifz .gt_sourcenote {
+#lwwledoodj .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -733,63 +770,63 @@ Figure&nbsp;2.2: An example of sets
   padding-right: 5px;
 }
 
-#jessqhlifz .gt_left {
+#lwwledoodj .gt_left {
   text-align: left;
 }
 
-#jessqhlifz .gt_center {
+#lwwledoodj .gt_center {
   text-align: center;
 }
 
-#jessqhlifz .gt_right {
+#lwwledoodj .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#jessqhlifz .gt_font_normal {
+#lwwledoodj .gt_font_normal {
   font-weight: normal;
 }
 
-#jessqhlifz .gt_font_bold {
+#lwwledoodj .gt_font_bold {
   font-weight: bold;
 }
 
-#jessqhlifz .gt_font_italic {
+#lwwledoodj .gt_font_italic {
   font-style: italic;
 }
 
-#jessqhlifz .gt_super {
+#lwwledoodj .gt_super {
   font-size: 65%;
 }
 
-#jessqhlifz .gt_footnote_marks {
+#lwwledoodj .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#jessqhlifz .gt_asterisk {
+#lwwledoodj .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#jessqhlifz .gt_indent_1 {
+#lwwledoodj .gt_indent_1 {
   text-indent: 5px;
 }
 
-#jessqhlifz .gt_indent_2 {
+#lwwledoodj .gt_indent_2 {
   text-indent: 10px;
 }
 
-#jessqhlifz .gt_indent_3 {
+#lwwledoodj .gt_indent_3 {
   text-indent: 15px;
 }
 
-#jessqhlifz .gt_indent_4 {
+#lwwledoodj .gt_indent_4 {
   text-indent: 20px;
 }
 
-#jessqhlifz .gt_indent_5 {
+#lwwledoodj .gt_indent_5 {
   text-indent: 25px;
 }
 </style>
@@ -828,13 +865,48 @@ Figure&nbsp;2.2: An example of sets
 </div>
 </div>
 </div>
+</section>
+<section id="inductive-logic" class="level2" data-number="2.4">
+<h2 data-number="2.4" class="anchored" data-anchor-id="inductive-logic"><span class="header-section-number">2.4</span> Inductive logic</h2>
+<section id="two-problems-with-inductive-arguments" class="level3" data-number="2.4.1">
+<h3 data-number="2.4.1" class="anchored" data-anchor-id="two-problems-with-inductive-arguments"><span class="header-section-number">2.4.1</span> Two problems with inductive arguments</h3>
+<blockquote class="blockquote">
+<p>Argument (4)</p>
+<p><strong>Premise</strong>: <em>This orange that the merchant picked from the box and gave me is good.</em></p>
+<p><strong>Conclusion</strong>: <em>All oranges in the box are good.</em></p>
+</blockquote>
 
 
 <div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" data-line-spacing="2" role="list" style="display: none">
+<div id="ref-burgess2011" class="csl-entry" role="listitem">
+Burgess, A. G., &amp; Burgess, J. P. (2011). <em>Truth (princeton foundations of contemporary philosophy)</em>. Princeton University Press. <a href="http://gen.lib.rus.ec/book/index.php?md5=9e8b379addbc876feb842d90fad5d127">http://gen.lib.rus.ec/book/index.php?md5=9e8b379addbc876feb842d90fad5d127</a>
+</div>
+<div id="ref-chalmers1999" class="csl-entry" role="listitem">
+Chalmers, A. (1999). <em>What is this thing called science: An assessment of the nature and status of science and its methods</em> (3rd ed.). Open University Press. <a href="http://gen.lib.rus.ec/book/index.php?md5=cae7a2d4a631a96309d33b560498a6aa">http://gen.lib.rus.ec/book/index.php?md5=cae7a2d4a631a96309d33b560498a6aa</a>
+</div>
+<div id="ref-foucault2001" class="csl-entry" role="listitem">
+Foucault, M. (2001). <em>Essential works of foucault 1954-1984 volume 3: power</em> (J. D. Faubion, R. Hurley, C. Gordon, &amp; P. Rabinow, Eds.; 1st ed.). The New Press. <a href="http://gen.lib.rus.ec/book/index.php?md5=68e9b401a44f1fa6b4dbb66a4cb62588">http://gen.lib.rus.ec/book/index.php?md5=68e9b401a44f1fa6b4dbb66a4cb62588</a>
+</div>
+<div id="ref-haack1999" class="csl-entry" role="listitem">
+Haack, S. (1999). <em>Manifesto of a passionate moderate: Unfashionable essays</em>. University of Chicago Press. <a href="https://books.google.com/books?hl=en&amp;lr=&amp;id=2ezeTXOlQngC&amp;oi=fnd&amp;pg=PP11&amp;ots=vcDMOnFfFP&amp;sig=ne65Kt6g930-ahZe33N704y43nM">https://books.google.com/books?hl=en&amp;lr=&amp;id=2ezeTXOlQngC&amp;oi=fnd&amp;pg=PP11&amp;ots=vcDMOnFfFP&amp;sig=ne65Kt6g930-ahZe33N704y43nM</a>
+</div>
 <div id="ref-hacking2001" class="csl-entry" role="listitem">
 Hacking, I. (2001). <em>An Introduction to Probability and Inductive Logic Desk Examination Edition</em>. Cambridge University Press.
 </div>
+<div id="ref-lynch2004" class="csl-entry" role="listitem">
+Lynch, M. P. (2004). <em>True to life: Why truth matters</em>. The MIT Press. <a href="http://gen.lib.rus.ec/book/index.php?md5=8a5e130b50055a26bd0a91eaa4034771">http://gen.lib.rus.ec/book/index.php?md5=8a5e130b50055a26bd0a91eaa4034771</a>
 </div>
+<div id="ref-rasmussen2014" class="csl-entry" role="listitem">
+Rasmussen, J. (2014). <em>Defending the correspondence theory of truth</em>. Cambridge University Press. <a href="http://gen.lib.rus.ec/book/index.php?md5=7030952e135f5ef40982466a94034a16">http://gen.lib.rus.ec/book/index.php?md5=7030952e135f5ef40982466a94034a16</a>
+</div>
+<div id="ref-searle1995" class="csl-entry" role="listitem">
+Searle, J. R. (1995). <em>The construction of social reality</em>. THE FREE PRESS.
+</div>
+<div id="ref-sidky2020" class="csl-entry" role="listitem">
+Sidky, H. (2020). <em>Science and anthropology in a post-truth world: A critique of unreason and academic nonsense</em>. Lexington Books. <a href="http://gen.lib.rus.ec/book/index.php?md5=FDE9FFA2B84FFC2058DB8A7D245DB877">http://gen.lib.rus.ec/book/index.php?md5=FDE9FFA2B84FFC2058DB8A7D245DB877</a>
+</div>
+</div>
+</section>
 </section>
 
 </main> <!-- /main -->
