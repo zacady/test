@@ -278,7 +278,7 @@ The second criterion is more subtle. To understand it, remember why we use model
 
 :::::: {.content-visible when-format="html"}
 ::::: {#fig-Box1.2h .infobox style="--c:'Box 1.2 – Key idea';"}
-::: {style="text-align:center !important;"}
+::: {style="text-align:center !important; margin-bottom:1.5em;"}
 **Two virtues of a good model**
 :::
 

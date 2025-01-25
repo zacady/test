@@ -70,8 +70,8 @@
   background: 5px center / 3em no-repeat rgba(16, 120, 149, 0.1);
   margin-top: 2em; 
   margin-bottom: 2em;
-  margin-right: 1em; 
-  margin-left: 1em;
+  margin-right: 1.5em; 
+  margin-left: 1.5em;
   padding: 1em 2em 1em 2em;
   font-size: .85em;
 }
@@ -98,6 +98,7 @@
 
 .digression figcaption {
     visibility: hidden !important;
+    display: none !important;
 }
 
 .working {
@@ -125,4 +126,38 @@ toc-active, .toc-active, csl-entry, .csl-entry {
    margin-bottom: 2em !important;
 }
 
+.blockquote p {
+   margin-bottom: 10px !important;
+}
+
+/*.extrapad li:not(:last-child) {
+    margin-bottom:30px  !important;
+}*/
+
+.extrapad li {
+    margin-bottom:30px  !important;
+}
+
+.extrapad li:first-child {
+    margin-top:30px  !important;
+}
+
+/*
+
+#TOC {
+  background-color: rgba(16, 120, 149, 0.05);
+}
+
+#quarto-sidebar {
+  background-color: rgba(16, 120, 149, 0.05);
+}
+
+*/
+#quarto-navbar {
+  background-color: rgba(16, 120, 149, 0.05);
+}
+
+.column-margin {
+  background-color: rgba(16, 120, 149, 0.05) !important;
+}
 
